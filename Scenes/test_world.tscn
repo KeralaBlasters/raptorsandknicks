@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3e1mfd5e7t1p"]
+
+[ext_resource type="PackedScene" uid="uid://bvdhf22plyy7c" path="res://Models/Road2.gltf" id="1_au00k"]
+[ext_resource type="PackedScene" uid="uid://d1d0adnny67ho" path="res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn" id="2_707cn"]
+
+[node name="TestWorld" type="Node3D"]
+
+[node name="Road2" parent="." instance=ExtResource("1_au00k")]
+
+[node name="Muscle Car" parent="Road2" instance=ExtResource("2_707cn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 181.035, 88.9349, -279.84)
+is_current_veh = true
+use_energy = false

@@ -21,7 +21,7 @@ class_name MVehicle_AI_NaviRegion # Class so it is easier to find in Add Child N
 @export_category("AI Settings")
 @export_group("AI")
 @export var enable_debug : bool = false # This will display debug info like AI path and Vehicle coordinations
-@export var max_speed : float = 50.0 # Max power this car will receive
+@export var max_speed : float = 1000 # Max power this car will receive
 @export var max_rev_speed : float = -1500.0
 @export var nav : NavigationAgent3D # Definition for our navigation agent
 @export var target_ray : Node3D # Definition for nodes we want our AI to generate path to
