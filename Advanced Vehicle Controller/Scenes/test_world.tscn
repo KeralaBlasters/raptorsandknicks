@@ -1,9 +1,22 @@
-[gd_scene load_steps=7 format=3 uid="uid://621i1at2iuig"]
+[gd_scene load_steps=10 format=3 uid="uid://621i1at2iuig"]
 
 [ext_resource type="Script" uid="uid://o7gvne15ftck" path="res://Advanced Vehicle Controller/Scenes/test_world.gd" id="1_74ofs"]
 [ext_resource type="PackedScene" uid="uid://dri2p5hydq006" path="res://Advanced Vehicle Controller/Scenes/map.blend" id="2_am4om"]
 [ext_resource type="PackedScene" uid="uid://dp8ufpb85ym31" path="res://Models/Road2.gltf" id="2_hecdd"]
 [ext_resource type="PackedScene" uid="uid://d1d0adnny67ho" path="res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn" id="3_am4om"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hecdd"]
+sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+
+[sub_resource type="Sky" id="Sky_am4om"]
+sky_material = SubResource("ProceduralSkyMaterial_hecdd")
+
+[sub_resource type="Environment" id="Environment_dnfv3"]
+background_mode = 2
+sky = SubResource("Sky_am4om")
+tonemap_mode = 2
+glow_enabled = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_hecdd"]
 size = Vector3(0.505371, 0.477051, 2.27649)
@@ -13,6 +26,13 @@ size = Vector3(0.505371, 0.477051, 2.27649)
 [node name="World" type="Node3D"]
 script = ExtResource("1_74ofs")
 
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_dnfv3")
+
 [node name="map" parent="." instance=ExtResource("2_am4om")]
 transform = Transform3D(-300, 0, -2.62268e-05, 0, 300, 0, 2.62268e-05, 0, -300, -519.851, -626.217, 1440.28)
 
@@ -20,7 +40,7 @@ transform = Transform3D(-300, 0, -2.62268e-05, 0, 300, 0, 2.62268e-05, 0, -300, 
 transform = Transform3D(0.503608, 0, -0.863932, 0, 1, 0, 0.863932, 0, 0.503608, 3.6156, -80.0322, 14.7277)
 
 [node name="Muscle Car" parent="Road2" instance=ExtResource("3_am4om")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -697.51, 120.716, -264.598)
+transform = Transform3D(-0.905361, 0, 0.424642, 0, 1, 0, -0.424642, 0, -0.905361, -750.11, 159.209, -585.352)
 is_current_veh = true
 use_energy = false
 
