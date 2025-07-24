@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://celfa400bfm8"]
+[gd_scene load_steps=2 format=3 uid="uid://c28unbdgiehd2"]
 
-[ext_resource type="Script" uid="uid://dp6yv0fwwc0mn" path="res://title_screen.gd" id="1_3xmvq"]
+[ext_resource type="Script" uid="uid://dxkkjbvtmf7ar" path="res://Advanced Vehicle Controller/Scenes/title_screen.gd" id="1_3xmvq"]
 
 [node name="Title_screen" type="Control"]
 layout_mode = 3

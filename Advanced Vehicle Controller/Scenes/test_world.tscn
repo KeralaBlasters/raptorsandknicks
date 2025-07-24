@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://j7gbd4s6vq1n"]
+[gd_scene load_steps=10 format=3 uid="uid://bqg80ml85a3tb"]
 
 [ext_resource type="Script" path="res://Advanced Vehicle Controller/Scenes/test_world.gd" id="1_74ofs"]
 [ext_resource type="PackedScene" uid="uid://dri2p5hydq006" path="res://Advanced Vehicle Controller/Scenes/map.blend" id="2_am4om"]

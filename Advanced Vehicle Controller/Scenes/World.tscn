@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://cweitss0tnrcf"]
+[gd_scene load_steps=3 format=3 uid="uid://cbktme2woiar5"]
 
-[ext_resource type="PackedScene" uid="uid://c30v8ttvv2p1f" path="res://Models/Road2.gltf" id="1_o4473"]
+[ext_resource type="PackedScene" uid="uid://dp8ufpb85ym31" path="res://Models/Road2.gltf" id="1_o4473"]
 [ext_resource type="PackedScene" uid="uid://d1d0adnny67ho" path="res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn" id="2_k044h"]
 
 [node name="TestWorld" type="Node3D"]
