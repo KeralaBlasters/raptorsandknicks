@@ -29,7 +29,6 @@ List of Controlls for both Keyboard and Controllers
 
 Copyright 2025 Millu30 A.K.A Gidan"
 config/version="1.0"
-run/main_scene="uid://c28unbdgiehd2"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://AVC.png"
 
