@@ -1,8 +1,3 @@
+res://Advanced Vehicle Controller/Scenes/test_world.tscn
 res://Advanced Vehicle Controller/Scenes/Debug_Map.tscn
 res://Advanced Vehicle Controller/Scenes/cam_holder.tscn
-res://Advanced Vehicle Controller/Scenes/MinimapCamera.tscn
-res://Advanced Vehicle Controller/Scenes/ui.tscn
-res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn
-res://Advanced Vehicle Controller/Scenes/test_world.tscn
-res://Advanced Vehicle Controller/Scenes/title_screen.tscn
-res://Advanced Vehicle Controller/Scenes/World.tscn

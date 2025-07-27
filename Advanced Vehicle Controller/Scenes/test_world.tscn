@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://Advanced Vehicle Controller/Scenes/test_world.gd" id="1_74ofs"]
 [ext_resource type="PackedScene" uid="uid://dri2p5hydq006" path="res://Advanced Vehicle Controller/Scenes/map.blend" id="2_am4om"]
-[ext_resource type="PackedScene" uid="uid://dp8ufpb85ym31" path="res://Models/Road2.gltf" id="2_hecdd"]
 [ext_resource type="PackedScene" uid="uid://d1d0adnny67ho" path="res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn" id="3_am4om"]
+[ext_resource type="PackedScene" uid="uid://ymkqhj5xv402" path="res://Models/Road2Updated.gltf" id="3_hecdd"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hecdd"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -36,15 +36,15 @@ environment = SubResource("Environment_dnfv3")
 [node name="map" parent="." instance=ExtResource("2_am4om")]
 transform = Transform3D(-300, 0, -2.62268e-05, 0, 300, 0, 2.62268e-05, 0, -300, -519.851, -626.217, 1440.28)
 
-[node name="Road2" parent="." instance=ExtResource("2_hecdd")]
+[node name="Road2Updated" parent="." instance=ExtResource("3_hecdd")]
 transform = Transform3D(0.503608, 0, -0.863932, 0, 1, 0, 0.863932, 0, 0.503608, 3.6156, -80.0322, 14.7277)
 
-[node name="Muscle Car" parent="Road2" instance=ExtResource("3_am4om")]
-transform = Transform3D(-0.905361, 0, 0.424642, 0, 1, 0, -0.424642, 0, -0.905361, -750.11, 159.209, -585.352)
+[node name="Muscle Car" parent="." instance=ExtResource("3_am4om")]
+transform = Transform3D(-0.0890852, 0, 0.996023, 0, 1, 0, -0.996023, 0, -0.0890852, 131.559, 79.1768, -928.104)
 is_current_veh = true
 use_energy = false
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="Road2/Muscle Car"]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Muscle Car"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.573792, 0.876862, 0.159576)
 shape = SubResource("BoxShape3D_hecdd")
 
