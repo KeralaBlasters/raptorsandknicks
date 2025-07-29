@@ -1,2 +1,6 @@
-TextureRect
 Label
+HSlider
+CheckBox
+Button
+VBoxContainer
+TextureRect
