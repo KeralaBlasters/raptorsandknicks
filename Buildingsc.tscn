@@ -1,0 +1,42 @@
+[gd_scene load_steps=9 format=3 uid="uid://bckjbudjhcmdw"]
+
+[ext_resource type="PackedScene" uid="uid://co48vo7bagjoy" path="res://Models/SmallBuilding.tscn" id="1_biik1"]
+[ext_resource type="PackedScene" uid="uid://drt5p2u785d7e" path="res://Models/BigBuilding1.tscn" id="2_xctky"]
+[ext_resource type="PackedScene" uid="uid://bq8k0i0v7avv7" path="res://Models/Building3.tscn" id="3_5mv2a"]
+[ext_resource type="PackedScene" uid="uid://basvts16ujgec" path="res://Models/building4.tscn" id="4_7gub6"]
+[ext_resource type="PackedScene" uid="uid://jvaw73vp7utg" path="res://Models/building5.tscn" id="5_hc4qh"]
+[ext_resource type="PackedScene" uid="uid://dn4f2owee0n12" path="res://Models/build6.tscn" id="6_krsv8"]
+[ext_resource type="PackedScene" uid="uid://1rs2irtr8k7s" path="res://Models/cylinder2.tscn" id="7_xctky"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_xjdmi"]
+points = PackedVector3Array(1, 1.54237, 1.23959, 1, 2.44098, 0.999982, -1, 1.54237, 1.23959, 1, 0.535734, 1.23959, 1, 3.1804, -1, -1, 2.44098, 0.999982, -1, 0.535734, 1.23959, 1, -1, 0.999982, -1, 3.1804, -1, 1, -1, -1, -1, -1, 0.999982, -1, -1, -1)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="buildings" type="Node3D" parent="."]
+
+[node name="Cube" parent="buildings" instance=ExtResource("1_biik1")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 1.728, 0)
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="buildings/Cube"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="buildings/Cube/StaticBody3D2"]
+shape = SubResource("ConvexPolygonShape3D_xjdmi")
+
+[node name="Cube_002" parent="buildings" instance=ExtResource("2_xctky")]
+transform = Transform3D(70.7107, 0, 70.7107, 0, 100, 0, -70.7107, 0, 70.7107, 20.9805, 1.19204, 1.1126)
+
+[node name="Cube_003" parent="buildings" instance=ExtResource("3_5mv2a")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -11.4351, 4.92181, 1.1126)
+
+[node name="Cube_004" parent="buildings" instance=ExtResource("4_7gub6")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 35.7412, 2.40724, 1.1126)
+
+[node name="Cube_005" parent="buildings" instance=ExtResource("5_hc4qh")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 53.1839, 2.16047, 1.1126)
+
+[node name="Cube_001" parent="buildings" instance=ExtResource("6_krsv8")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 9.34317, 2.52292, 1.1126)
+
+[node name="Cylinder" parent="buildings" instance=ExtResource("7_xctky")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 68.2813, 3.76233, 1.1126)

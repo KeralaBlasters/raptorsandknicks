@@ -1,6 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1753660405
+::res://::1753749699
 AVC.png::CompressedTexture2D/CompressedTexture2D::4943202580687998810::1748294080::1753660355::1::::<><><>0<>0<>b9ff3f6863fbc28975ed11ae84075049<>res://.godot/imported/AVC.png-08600bcd2c7878b53ca1034a710556a8.ctex::
+Buildingsc.tscn::PackedScene::2547991442758348556::1753662391::0::1::::<><><>0<>0<><>::uid://co48vo7bagjoy::::res://Models/SmallBuilding.tscn<>uid://drt5p2u785d7e::::res://Models/BigBuilding1.tscn<>uid://bq8k0i0v7avv7::::res://Models/Building3.tscn<>uid://basvts16ujgec::::res://Models/building4.tscn<>uid://jvaw73vp7utg::::res://Models/building5.tscn<>uid://dn4f2owee0n12::::res://Models/build6.tscn
 export_presets.cfg::TextFile/TextFile::-1::1753397877::0::1::::<><><>0<>0<><>::
 README.md::TextFile/TextFile::-1::1748294080::0::1::::<><><>0<>0<><>::
 title_screen.gd::GDScript/GDScript::8277586447360902265::1753397877::0::1::::<>Control<><>0<>0<><>::
@@ -15,7 +16,7 @@ texture_02.png::CompressedTexture2D/CompressedTexture2D::1343423080394053938::17
 texture_03.png::CompressedTexture2D/CompressedTexture2D::5054282249589529505::1748294080::1753660357::1::::<><><>0<>0<>bcb47c02eee3c445e7a772e145e496c5<>res://.godot/imported/texture_03.png-42acc42610048ad29e6861e69b516882.s3tc.ctex::
 texture_03_Red.png::CompressedTexture2D/CompressedTexture2D::8066944552372322973::1748294080::1753660357::1::::<><><>0<>0<>401ff6f920ce06eefd38f0a2541d9c7c<>res://.godot/imported/texture_03_Red.png-59d69196a4136c46bf36063a880be49e.s3tc.ctex::
 White Box.tres::StandardMaterial3D/StandardMaterial3D::6582627536853294379::1748294080::0::1::::<><><>0<>0<><>::uid://te08na6s2juo::::res://Advanced Vehicle Controller/Debug content/texture_02.png
-::res://Advanced Vehicle Controller/Scenes/::1753660359
+::res://Advanced Vehicle Controller/Scenes/::1753662188
 cam_holder.tscn::PackedScene/PackedScene::8611761661853993003::1753659943::0::1::::<><><>0<>0<><>::uid://1p26pa17e30j::::res://Advanced Vehicle Controller/Scripts/Cam_Holder.gd
 Debug_Map.tscn::PackedScene/PackedScene::8577942180793110987::1753659943::0::1::::<><><>0<>0<><>::uid://bqhg03u7uopp1::::res://Advanced Vehicle Controller/Debug content/Black Box.tres<>uid://dgucgrkhjqrj0::::res://Advanced Vehicle Controller/Debug content/Red Box.tres<>uid://drtkaugr7kqas::::res://Advanced Vehicle Controller/Vehicle/NightSky/NightSky_Body.tscn<>uid://dcladqkfg3jij::::res://Advanced Vehicle Controller/Debug content/Emission White Box.tres<>uid://c01w6cl6ib7pf::::res://Advanced Vehicle Controller/Debug content/White Box.tres<>uid://d1d0adnny67ho::::res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn<>uid://difi1uhwesclv::::res://Advanced Vehicle Controller/Vehicle/AI_Vehicles/AI_Muscle_Car.tscn<>uid://byy3atqki4s0k::::res://Advanced Vehicle Controller/Scripts/Path_Follow_Setup.gd<>uid://beg78x7knveom::::res://Advanced Vehicle Controller/Vehicle/AI_Vehicles/AI_NightSky.tscn<>uid://bo0sxuk33kxaa::::res://Advanced Vehicle Controller/Vehicle/TGR/TRG.tscn<>uid://bat0h5s3lfqru::::res://Advanced Vehicle Controller/Vehicle/GT30/GT30.tscn
 game_stats.gd::GDScript/GDScript::6595444113768107674::1753397877::0::1::::<>Node<><>0<>0<><>::
@@ -24,19 +25,19 @@ MinimapCamera.tscn::PackedScene/PackedScene::8523714585341141265::1748294080::0:
 options_menu.gd::GDScript/GDScript::3240603212406325458::1753397877::0::1::::<>Control<><>0<>0<><>::
 options_menu.tscn::PackedScene/PackedScene::1372408963111544450::1753397898::0::1::::<><><>0<>0<><>::uid://bmf1i5ibohjla::::res://Advanced Vehicle Controller/Scenes/options_menu.gd
 test_world.gd::GDScript/GDScript::1049106392895367010::1753397877::0::1::::<>Node3D<><>0<>0<><>::
-test_world.tscn::PackedScene/PackedScene::3523877402847435959::1753659943::0::1::::<><><>0<>0<><>::res://Advanced Vehicle Controller/Scenes/test_world.gd<>uid://dri2p5hydq006::::res://Advanced Vehicle Controller/Scenes/map.blend<>uid://d1d0adnny67ho::::res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn<>uid://ymkqhj5xv402::::res://Models/Road2Updated.gltf
+test_world.tscn::PackedScene::3523877402847435959::1753662188::0::1::::<><><>0<>0<><>::uid://o7gvne15ftck::::res://Advanced Vehicle Controller/Scenes/test_world.gd<>uid://drt5p2u785d7e::::res://Models/BigBuilding1.tscn<>uid://jvaw73vp7utg::::res://Models/building5.tscn<>uid://d1d0adnny67ho::::res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn<>uid://ymkqhj5xv402::::res://Models/Road2Updated.gltf<>uid://co48vo7bagjoy::::res://Models/SmallBuilding.tscn<>uid://dn4f2owee0n12::::res://Models/build6.tscn
 title_screen.gd::GDScript/GDScript::8794872560211239961::1753398025::0::1::::<>Control<><>0<>0<><>::
 title_screen.tscn::PackedScene/PackedScene::6737302224114374077::1753398025::0::1::::<><><>0<>0<><>::uid://dxkkjbvtmf7ar::::res://Advanced Vehicle Controller/Scenes/title_screen.gd
 ui.gd::GDScript/GDScript::2306215330563761639::1753397877::0::1::::<>CanvasLayer<><>0<>0<><>::
 ui.tscn::PackedScene/PackedScene::4377367140124869335::1753397877::0::1::::<><><>0<>0<><>::res://Advanced Vehicle Controller/Scenes/ui.gd
 World.tscn::PackedScene/PackedScene::4864849293775976704::1753398025::0::1::::<><><>0<>0<><>::uid://dp8ufpb85ym31::::res://Models/Road2.gltf<>uid://d1d0adnny67ho::::res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn
 ::res://Advanced Vehicle Controller/Scripts/::1752705244
-advanced_vehicle_controller.gd::GDScript/GDScript::2472278546070459169::1748294080::0::1::::MVehicle3D<>VehicleBody3D<><>0<>0<><>::
+advanced_vehicle_controller.gd::GDScript/GDScript::2472278546070459169::1748294080::0::1::::MVehicle3D<>VehicleBody3D<>res://Advanced Vehicle Controller/Textures/MVehicleBody3D.png<>0<>0<><>::
 Cam_Holder.gd::GDScript/GDScript::1857571108390011307::1748294080::0::1::::<>Node3D<><>0<>0<><>::
 minimap.gd::GDScript/GDScript::2479482204046865057::1748294080::0::1::::<>PanelContainer<><>0<>0<><>::
 Path_Follow_Setup.gd::GDScript/GDScript::4122199096027503692::1748294080::0::1::::<>PathFollow3D<><>0<>0<><>::
-Race_follow_AI.gd::GDScript/GDScript::1276503333075911817::1748294080::0::1::::MVehicleBasicFollowAI<>VehicleBody3D<><>0<>0<><>::
-Race_NaviAgent_AI.gd::GDScript/GDScript::1257366895375297610::1752705244::0::1::::MVehicle_AI_NaviRegion<>VehicleBody3D<><>0<>0<><>::
+Race_follow_AI.gd::GDScript/GDScript::1276503333075911817::1748294080::0::1::::MVehicleBasicFollowAI<>VehicleBody3D<>res://Advanced Vehicle Controller/Textures/MVehicleBody3DAI.png<>0<>0<><>::
+Race_NaviAgent_AI.gd::GDScript/GDScript::1257366895375297610::1752705244::0::1::::MVehicle_AI_NaviRegion<>VehicleBody3D<>res://Advanced Vehicle Controller/Textures/MVehicleBody3DAI.png<>0<>0<><>::
 ::res://Advanced Vehicle Controller/Textures/::1753660356
 Map_indicator1.png::CompressedTexture2D/CompressedTexture2D::1150037873644677387::1748294080::1753660355::1::::<><><>0<>0<>7c2347f725ebd0e250b7ff5735a2939c<>res://.godot/imported/Map_indicator1.png-01cfb1f01c7384a34c0d8e9fc215b338.ctex::
 Map_indicator2.png::CompressedTexture2D/CompressedTexture2D::6372069324866250506::1748294080::1753660356::1::::<><><>0<>0<>064d192796237fd14474345e4528b04a<>res://.godot/imported/Map_indicator2.png-6111dba38f9066d121adc7880775a7c4.ctex::
@@ -95,8 +96,13 @@ TRG_Wheel.tscn::PackedScene/PackedScene::1159187520725857827::1748294080::0::1::
 ::res://Advanced Vehicle Controller/Vehicle/TGR/TGR TXT/::1753660356
 TRG_GlassAndDeco_BaseColor.png::CompressedTexture2D/CompressedTexture2D::7115954002350408881::1748294080::1753660356::1::::<><><>0<>0<>7cf68535fd2129a6a37fb24850f21da6<>res://.godot/imported/TRG_GlassAndDeco_BaseColor.png-cedc58ad22f62f1b982cad4e4fe93463.ctex::
 TRG_Wheel_Wheel_BaseColor.png::CompressedTexture2D/CompressedTexture2D::7982032754337331920::1748294080::1753660356::1::::<><><>0<>0<>5985b1b946881e854da1fb6a56d33b50<>res://.godot/imported/TRG_Wheel_Wheel_BaseColor.png-5abed155f703aaee5d8a5da9edca49bf.ctex::
-::res://Models/::1753660598
-buildings.blend::PackedScene::3753579097486546859::1753660598::1753660600::1::::<><><>0<>0<>00344586a96e3d1810d7056555a7db81<>res://.godot/imported/buildings.blend-183737ec3b00f9c521613e0f53e5c4ee.scn::
+::res://Models/::1753662060
+BigBuilding1.tscn::PackedScene::8393545317470315344::1753662060::0::1::::<><><>0<>0<><>::
+build6.tscn::PackedScene::8131936544141406923::1753662060::0::1::::<><><>0<>0<><>::
+Building3.tscn::PackedScene::3578218922364722078::1753662060::0::1::::<><><>0<>0<><>::
+building4.tscn::PackedScene::2424889457219268874::1753662060::0::1::::<><><>0<>0<><>::
+building5.tscn::PackedScene::675092538020653164::1753662060::0::1::::<><><>0<>0<><>::
+buildings.blend::PackedScene/PackedScene::3753579097486546859::1753660598::1753660600::1::::<><><>0<>0<>00344586a96e3d1810d7056555a7db81<>res://.godot/imported/buildings.blend-183737ec3b00f9c521613e0f53e5c4ee.scn::
 PavingStones081_4K-JPG_Color.jpg::CompressedTexture2D/CompressedTexture2D::1450059156655044854::1753659796::1753660356::1::::<><><>0<>0<>555f93411ad5760854643ff87e4a4998<>res://.godot/imported/PavingStones081_4K-JPG_Color.jpg-7e1edc0471b2d3a94bcd72b9e6ad9235.s3tc.ctex::
 PavingStones081_4K-JPG_NormalGL.jpg::CompressedTexture2D/CompressedTexture2D::7873123021528081004::1753659796::1753660356::1::::<><><>0<>0<>fd029b7bec9b51c217288c89509f639a<>res://.godot/imported/PavingStones081_4K-JPG_NormalGL.jpg-eedce7b343f7b37ba44e8545ef5716e8.s3tc.ctex::
 PavingStones081_4K-JPG_Roughness.png::CompressedTexture2D/CompressedTexture2D::5231182270557745437::1753659796::1753660356::1::::<><><>0<>0<>b7cce85e595ac2a86d3c93f34060205e<>res://.godot/imported/PavingStones081_4K-JPG_Roughness.png-7cf1fb8727b57ada333729a6594e4a31.s3tc.ctex::
@@ -105,3 +111,4 @@ Road2Updated.gltf::PackedScene/PackedScene::1709940905952986489::1753659796::175
 Road007_4K-JPG_Color.jpg::CompressedTexture2D/CompressedTexture2D::5203004581020180984::1753659796::1753660357::1::::<><><>0<>0<>ce64512dd1249fadc7776473b91d83b5<>res://.godot/imported/Road007_4K-JPG_Color.jpg-d2ac30023a468d7416f04483f8fb42ef.s3tc.ctex::
 Road007_4K-JPG_NormalGL.jpg::CompressedTexture2D/CompressedTexture2D::2777305080024387344::1753659796::1753660357::1::::<><><>0<>0<>504f203589095dcbfd9268144c11991b<>res://.godot/imported/Road007_4K-JPG_NormalGL.jpg-8b9b6d03fe991019148929df7a84a2ec.s3tc.ctex::
 Road007_4K-JPG_Roughness.png::CompressedTexture2D/CompressedTexture2D::6347492027316346688::1753659796::1753660357::1::::<><><>0<>0<>8efb7dd2626926e4cacc8774452744af<>res://.godot/imported/Road007_4K-JPG_Roughness.png-1759d924a05d078fc1543398eef5092c.s3tc.ctex::
+SmallBuilding.tscn::PackedScene::5817394080426010600::1753662060::0::1::::<><><>0<>0<><>::

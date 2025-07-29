@@ -1,7 +1,9 @@
+res://Advanced Vehicle Controller/Scenes/test_world.tscn
+res://Buildingsc.tscn
 res://Models/BigBuilding1.tscn
 res://Models/SmallBuilding.tscn
-res://Models/building5.tscn
-res://Models/build6.tscn
-res://Advanced Vehicle Controller/Scenes/test_world.tscn
 res://Models/Building3.tscn
 res://Models/building4.tscn
+res://Models/building5.tscn
+res://Models/build6.tscn
+res://Models/cylinder2.tscn
