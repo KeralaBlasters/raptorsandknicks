@@ -1,7 +1,8 @@
-[gd_scene load_steps=16 format=3 uid="uid://c28unbdgiehd2"]
+[gd_scene load_steps=17 format=3 uid="uid://c28unbdgiehd2"]
 
 [ext_resource type="Script" uid="uid://dxkkjbvtmf7ar" path="res://Advanced Vehicle Controller/Scenes/title_screen.gd" id="1_3xmvq"]
 [ext_resource type="Texture2D" uid="uid://dvpk2xkn2uttg" path="res://Advanced Vehicle Controller/Textures/SpeedState_Poster.png" id="2_on7fg"]
+[ext_resource type="FontFile" uid="uid://bpslylaiai81n" path="res://Advanced Vehicle Controller/Textures/blowbrush.otf" id="3_y1xdm"]
 
 [sub_resource type="Theme" id="Theme_on7fg"]
 
@@ -145,8 +146,11 @@ theme_override_constants/separation = 20
 
 [node name="PlayButton" type="Button" parent="MarginContainer/MainButtons"]
 layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.917647, 0.0588235, 0.0666667, 1)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_pressed_color = Color(0.917647, 0.0588235, 0.0666667, 1)
+theme_override_fonts/font = ExtResource("3_y1xdm")
+theme_override_font_sizes/font_size = 30
 theme_override_styles/hover = SubResource("StyleBoxFlat_t5j5m")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_5l38a")
 theme_override_styles/normal = SubResource("StyleBoxFlat_on7fg")
@@ -154,8 +158,11 @@ text = "PLAY"
 
 [node name="OptionsButton" type="Button" parent="MarginContainer/MainButtons"]
 layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.917647, 0.0588235, 0.0666667, 1)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_pressed_color = Color(0.917647, 0.0588235, 0.0666667, 1)
+theme_override_fonts/font = ExtResource("3_y1xdm")
+theme_override_font_sizes/font_size = 30
 theme_override_styles/hover = SubResource("StyleBoxFlat_44fyb")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_4vv1r")
 theme_override_styles/normal = SubResource("StyleBoxFlat_y1xdm")
@@ -163,8 +170,11 @@ text = "OPTIONS"
 
 [node name="QuitButton" type="Button" parent="MarginContainer/MainButtons"]
 layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.917647, 0.0588235, 0.0666667, 1)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_pressed_color = Color(0.917647, 0.0588235, 0.0666667, 1)
+theme_override_fonts/font = ExtResource("3_y1xdm")
+theme_override_font_sizes/font_size = 30
 theme_override_styles/hover = SubResource("StyleBoxFlat_fpt7l")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_mli10")
 theme_override_styles/normal = SubResource("StyleBoxFlat_eeuyw")
@@ -176,8 +186,11 @@ layout_mode = 2
 
 [node name="Back" type="Button" parent="MarginContainer/OptionsMenu"]
 layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.917647, 0.0588235, 0.0666667, 1)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_pressed_color = Color(0.917647, 0.0588235, 0.0666667, 1)
+theme_override_fonts/font = ExtResource("3_y1xdm")
+theme_override_font_sizes/font_size = 30
 theme_override_styles/hover = SubResource("StyleBoxFlat_1aivf")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_gsxjp")
 theme_override_styles/normal = SubResource("StyleBoxFlat_3ytd4")
@@ -185,6 +198,8 @@ text = "BACK"
 
 [node name="FullScreen" type="CheckBox" parent="MarginContainer/OptionsMenu"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_y1xdm")
+theme_override_font_sizes/font_size = 20
 text = "FULLSCREEN"
 
 [node name="MainVolSlider" type="HSlider" parent="MarginContainer/OptionsMenu"]
@@ -198,6 +213,7 @@ custom_minimum_size = Vector2(125, 0)
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("3_y1xdm")
 theme_override_font_sizes/font_size = 15
 text = "MAIN VOLUME"
 horizontal_alignment = 1
@@ -213,6 +229,7 @@ custom_minimum_size = Vector2(125, 0)
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("3_y1xdm")
 theme_override_font_sizes/font_size = 15
 text = "MUSIC VOLUME"
 horizontal_alignment = 1
@@ -228,6 +245,7 @@ custom_minimum_size = Vector2(125, 0)
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("3_y1xdm")
 theme_override_font_sizes/font_size = 15
 text = "SFX VOLUME"
 horizontal_alignment = 1
