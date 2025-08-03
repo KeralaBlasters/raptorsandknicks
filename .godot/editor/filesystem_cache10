@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1753995896
+::res://::1754258959
 AVC.png::CompressedTexture2D/CompressedTexture2D::4943202580687998810::1753660259::1753660444::1::::<><><>0<>0<>b9ff3f6863fbc28975ed11ae84075049<>res://.godot/imported/AVC.png-08600bcd2c7878b53ca1034a710556a8.ctex::
 default_bus_layout.tres::AudioBusLayout/AudioBusLayout::9107317078151757314::1753753082::0::1::::<><><>0<>0<><>::
 export_presets.cfg::TextFile/TextFile::-1::1753660260::0::1::::<><><>0<>0<><>::
@@ -16,30 +16,29 @@ texture_02.png::CompressedTexture2D/CompressedTexture2D::1343423080394053938::17
 texture_03.png::CompressedTexture2D/CompressedTexture2D::5054282249589529505::1753660259::1753660445::1::::<><><>0<>0<>bcb47c02eee3c445e7a772e145e496c5<>res://.godot/imported/texture_03.png-42acc42610048ad29e6861e69b516882.s3tc.ctex::
 texture_03_Red.png::CompressedTexture2D/CompressedTexture2D::8066944552372322973::1753660259::1753660445::1::::<><><>0<>0<>401ff6f920ce06eefd38f0a2541d9c7c<>res://.godot/imported/texture_03_Red.png-59d69196a4136c46bf36063a880be49e.s3tc.ctex::
 White Box.tres::StandardMaterial3D/StandardMaterial3D::6582627536853294379::1753660259::0::1::::<><><>0<>0<><>::uid://te08na6s2juo::::res://Advanced Vehicle Controller/Debug content/texture_02.png
-::res://Advanced Vehicle Controller/Scenes/::1753995917
+::res://Advanced Vehicle Controller/Scenes/::1753998973
 cam_holder.tscn::PackedScene/PackedScene::8611761661853993003::1753660259::0::1::::<><><>0<>0<><>::uid://1p26pa17e30j::::res://Advanced Vehicle Controller/Scripts/Cam_Holder.gd
 Debug_Map.tscn::PackedScene/PackedScene::8577942180793110987::1753660259::0::1::::<><><>0<>0<><>::uid://bqhg03u7uopp1::::res://Advanced Vehicle Controller/Debug content/Black Box.tres<>uid://dgucgrkhjqrj0::::res://Advanced Vehicle Controller/Debug content/Red Box.tres<>uid://drtkaugr7kqas::::res://Advanced Vehicle Controller/Vehicle/NightSky/NightSky_Body.tscn<>uid://dcladqkfg3jij::::res://Advanced Vehicle Controller/Debug content/Emission White Box.tres<>uid://c01w6cl6ib7pf::::res://Advanced Vehicle Controller/Debug content/White Box.tres<>uid://d1d0adnny67ho::::res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn<>uid://difi1uhwesclv::::res://Advanced Vehicle Controller/Vehicle/AI_Vehicles/AI_Muscle_Car.tscn<>uid://byy3atqki4s0k::::res://Advanced Vehicle Controller/Scripts/Path_Follow_Setup.gd<>uid://beg78x7knveom::::res://Advanced Vehicle Controller/Vehicle/AI_Vehicles/AI_NightSky.tscn<>uid://bo0sxuk33kxaa::::res://Advanced Vehicle Controller/Vehicle/TGR/TRG.tscn<>uid://bat0h5s3lfqru::::res://Advanced Vehicle Controller/Vehicle/GT30/GT30.tscn
 game_stats.gd::GDScript/GDScript::6595444113768107674::1753660259::0::1::::<>Node<><>0<>0<><>::
 map.blend::PackedScene/PackedScene::8370655148280852933::1753660259::1753660451::1::::<><><>0<>0<>1578c97aea8f95aa6f28db8ef8236c8f<>res://.godot/imported/map.blend-37eef3a4a34301bfc082a96a34faeaaf.scn::
 MinimapCamera.tscn::PackedScene/PackedScene::8523714585341141265::1753660259::0::1::::<><><>0<>0<><>::uid://bblcyel3rq6gj::::res://Advanced Vehicle Controller/Scripts/minimap.gd<>uid://qnc7q4bsma6n::::res://Advanced Vehicle Controller/Textures/Map_indicator1.png
 test_world.gd::GDScript/GDScript::1049106392895367010::1753660259::0::1::::<>Node3D<><>0<>0<><>::
-test_world.tscn::PackedScene::3523877402847435959::1753995917::0::1::::<><><>0<>0<><>::uid://o7gvne15ftck::::res://Advanced Vehicle Controller/Scenes/test_world.gd<>uid://dri2p5hydq006::::res://Advanced Vehicle Controller/Scenes/map.blend<>uid://d1d0adnny67ho::::res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn<>uid://ymkqhj5xv402::::res://Models/Road2Updated.gltf
-title_screen.gd::GDScript::8794872560211239961::1753841309::0::1::::<>Control<><>0<>0<><>::
-title_screen.tscn::PackedScene::6737302224114374077::1753995917::0::1::::<><><>0<>0<><>::uid://dxkkjbvtmf7ar::::res://Advanced Vehicle Controller/Scenes/title_screen.gd<>uid://dvpk2xkn2uttg::::res://Advanced Vehicle Controller/Textures/SpeedState_Poster.png
+test_world.tscn::PackedScene::3523877402847435959::1753998955::0::1::::<><><>0<>0<><>::uid://o7gvne15ftck::::res://Advanced Vehicle Controller/Scenes/test_world.gd<>uid://dri2p5hydq006::::res://Advanced Vehicle Controller/Scenes/map.blend<>uid://d1d0adnny67ho::::res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn<>uid://ymkqhj5xv402::::res://Models/Road2Updated.gltf
+title_screen.gd::GDScript/GDScript::8794872560211239961::1753841309::0::1::::<>Control<><>0<>0<><>::
+title_screen.tscn::PackedScene::6737302224114374077::1753998973::0::1::::<><><>0<>0<><>::uid://dxkkjbvtmf7ar::::res://Advanced Vehicle Controller/Scenes/title_screen.gd<>uid://dvpk2xkn2uttg::::res://Advanced Vehicle Controller/Textures/SpeedState_Poster.png<>uid://bpslylaiai81n::::res://Advanced Vehicle Controller/Textures/blowbrush.otf
 ui.gd::GDScript/GDScript::2306215330563761639::1753660259::0::1::::<>CanvasLayer<><>0<>0<><>::
 ui.tscn::PackedScene/PackedScene::4377367140124869335::1753660259::0::1::::<><><>0<>0<><>::res://Advanced Vehicle Controller/Scenes/ui.gd
 World.tscn::PackedScene/PackedScene::4864849293775976704::1753660259::0::1::::<><><>0<>0<><>::uid://dp8ufpb85ym31::::res://Models/Road2.gltf<>uid://d1d0adnny67ho::::res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn
 ::res://Advanced Vehicle Controller/Scripts/::1753661299
-advanced_vehicle_controller.gd::GDScript/GDScript::2472278546070459169::1753660259::0::1::::MVehicle3D<>VehicleBody3D<><>0<>0<><>::
+advanced_vehicle_controller.gd::GDScript/GDScript::2472278546070459169::1753660259::0::1::::MVehicle3D<>VehicleBody3D<>res://Advanced Vehicle Controller/Textures/MVehicleBody3D.png<>0<>0<><>::
 Cam_Holder.gd::GDScript/GDScript::1857571108390011307::1753660259::0::1::::<>Node3D<><>0<>0<><>::
 minimap.gd::GDScript/GDScript::2479482204046865057::1753660259::0::1::::<>PanelContainer<><>0<>0<><>::
 Path_Follow_Setup.gd::GDScript/GDScript::4122199096027503692::1753660259::0::1::::<>PathFollow3D<><>0<>0<><>::
-Race_follow_AI.gd::GDScript/GDScript::1276503333075911817::1753660259::0::1::::MVehicleBasicFollowAI<>VehicleBody3D<><>0<>0<><>::
-Race_NaviAgent_AI.gd::GDScript/GDScript::1257366895375297610::1753660259::0::1::::MVehicle_AI_NaviRegion<>VehicleBody3D<><>0<>0<><>::
+Race_follow_AI.gd::GDScript/GDScript::1276503333075911817::1753660259::0::1::::MVehicleBasicFollowAI<>VehicleBody3D<>res://Advanced Vehicle Controller/Textures/MVehicleBody3DAI.png<>0<>0<><>::
+Race_NaviAgent_AI.gd::GDScript/GDScript::1257366895375297610::1753660259::0::1::::MVehicle_AI_NaviRegion<>VehicleBody3D<>res://Advanced Vehicle Controller/Textures/MVehicleBody3DAI.png<>0<>0<><>::
 SpeedStatePoster.png::CompressedTexture2D/CompressedTexture2D::6707007589134003709::1753661298::1753661299::1::::<><><>0<>0<>92bc6c7d42fd9e6721f68372b202d4a3<>res://.godot/imported/SpeedStatePoster.png-4554d87cb5ebc6d34ccf909a98d653af.ctex::
-::res://Advanced Vehicle Controller/Textures/::1753997088
-blowbrush.otf::FontFile::3477123461931499845::1753997073::1753997074::1::::<><><>0<>0<>29c0dc486755e896ed4228a912f687ec<>res://.godot/imported/blowbrush.otf-269590a95854441c63c0cbf41b8c168c.fontdata::
-blowbrush.ttf::FontFile::6100006358460553800::1753997088::1753997089::1::::<><><>0<>0<>4cc85cb0b803fdeb9555a29e2bab4142<>res://.godot/imported/blowbrush.ttf-8d3c7d83d6a60457e092a6a7467d684c.fontdata::
+::res://Advanced Vehicle Controller/Textures/::1753997136
+blowbrush.otf::FontFile/FontFile::3477123461931499845::1753997073::1753997074::1::::<><><>0<>0<>29c0dc486755e896ed4228a912f687ec<>res://.godot/imported/blowbrush.otf-269590a95854441c63c0cbf41b8c168c.fontdata::
 Map_indicator1.png::CompressedTexture2D/CompressedTexture2D::1150037873644677387::1753660259::1753660444::1::::<><><>0<>0<>7c2347f725ebd0e250b7ff5735a2939c<>res://.godot/imported/Map_indicator1.png-01cfb1f01c7384a34c0d8e9fc215b338.ctex::
 Map_indicator2.png::CompressedTexture2D/CompressedTexture2D::6372069324866250506::1753660259::1753660444::1::::<><><>0<>0<>064d192796237fd14474345e4528b04a<>res://.godot/imported/Map_indicator2.png-6111dba38f9066d121adc7880775a7c4.ctex::
 MVehicleBody3D.png::CompressedTexture2D/CompressedTexture2D::6171312370142274508::1753660259::1753660444::1::::<><><>0<>0<>e6739ff4c8a358f8993b3b80d3a684a9<>res://.godot/imported/MVehicleBody3D.png-727e47dc998f766c6095dcbdc5616b48.ctex::
