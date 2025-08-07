@@ -1,10 +1,17 @@
 extends Control
 
+@onready var fullscreen_check = $MarginContainer/OptionsMenu/FullScreen
+
+
 func _ready() -> void:
+	$MarginContainer/OptionsMenu/FullScreen.button_pressed = DisplayServer.window_get_mode() == DisplayServer.WINDOW_MODE_EXCLUSIVE_FULLSCREEN
 	$MarginContainer/OptionsMenu/MainVolSlider.value = db_to_linear(AudioServer.get_bus_volume_db(AudioServer.get_bus_index("Master")))
 	$MarginContainer/OptionsMenu/MusicVolSlider.value = db_to_linear(AudioServer.get_bus_volume_db(AudioServer.get_bus_index("MUSIC")))
 	$MarginContainer/OptionsMenu/SFXVolSlider.value = db_to_linear(AudioServer.get_bus_volume_db(AudioServer.get_bus_index("SFX")))
 	$TitleScreenMusic.play()
+	
+
+
 
 func _on_play_button_pressed():
 	get_tree().change_scene_to_file("res://Advanced Vehicle Controller/Scenes/test_world.tscn")

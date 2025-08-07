@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dxkkjbvtmf7ar" path="res://Advanced Vehicle Controller/Scenes/title_screen.gd" id="1_3xmvq"]
 [ext_resource type="Texture2D" uid="uid://dvpk2xkn2uttg" path="res://Advanced Vehicle Controller/Textures/SpeedState_Poster.png" id="2_on7fg"]
 [ext_resource type="FontFile" uid="uid://bpslylaiai81n" path="res://Advanced Vehicle Controller/Textures/blowbrush.otf" id="3_y1xdm"]
-[ext_resource type="AudioStream" uid="uid://cpffrfyaqe0q1" path="res://Latin Fashion Trap by Infraction [No Copyright Music]  Latin Fusion.mp3" id="4_eeuyw"]
+[ext_resource type="AudioStream" uid="uid://cmthqa4hctmyf" path="res://[FREE FOR PROFIT] Melodic Type Beat - ADDICTED  Dark Type Beat  Rap Trap Beat Instrumental.mp3" id="4_eeuyw"]
 
 [sub_resource type="Theme" id="Theme_on7fg"]
 
@@ -296,6 +296,7 @@ horizontal_alignment = 1
 [node name="TitleScreenMusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_eeuyw")
 bus = &"MUSIC"
+parameters/looping = true
 
 [connection signal="pressed" from="MarginContainer/MainButtons/PlayButton" to="." method="_on_play_button_pressed"]
 [connection signal="pressed" from="MarginContainer/MainButtons/OptionsButton" to="." method="_on_options_button_pressed"]

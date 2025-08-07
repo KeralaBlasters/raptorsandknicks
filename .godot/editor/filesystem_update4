@@ -1,3 +1,5 @@
-res://Advanced Vehicle Controller/Scenes/title_screen.tscn
 res://Advanced Vehicle Controller/Scenes/test_world.tscn
+res://Advanced Vehicle Controller/Scenes/test_world.gd
+res://Advanced Vehicle Controller/Scenes/title_screen.tscn
+res://Advanced Vehicle Controller/Scenes/ui.tscn
 res://Advanced Vehicle Controller/Scenes/title_screen.gd
