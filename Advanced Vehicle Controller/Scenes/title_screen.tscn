@@ -171,10 +171,10 @@ texture = ExtResource("2_on7fg")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
-offset_left = 800.0
-offset_top = 100.0
-offset_right = 926.0
-offset_bottom = 420.0
+offset_left = 777.0
+offset_top = 33.0
+offset_right = 903.0
+offset_bottom = 353.0
 scale = Vector2(3, 3)
 theme = SubResource("Theme_on7fg")
 
@@ -219,6 +219,12 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_fpt7l")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_mli10")
 theme_override_styles/normal = SubResource("StyleBoxFlat_eeuyw")
 text = "QUIT"
+
+[node name="TitleScreenMusic" type="AudioStreamPlayer" parent="MarginContainer"]
+stream = ExtResource("4_eeuyw")
+autoplay = true
+bus = &"MUSIC"
+parameters/looping = true
 
 [node name="OptionsMenu" type="VBoxContainer" parent="MarginContainer"]
 visible = false
@@ -292,11 +298,6 @@ theme_override_fonts/font = ExtResource("3_y1xdm")
 theme_override_font_sizes/font_size = 15
 text = "SFX VOLUME"
 horizontal_alignment = 1
-
-[node name="TitleScreenMusic" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("4_eeuyw")
-bus = &"MUSIC"
-parameters/looping = true
 
 [connection signal="pressed" from="MarginContainer/MainButtons/PlayButton" to="." method="_on_play_button_pressed"]
 [connection signal="pressed" from="MarginContainer/MainButtons/OptionsButton" to="." method="_on_options_button_pressed"]

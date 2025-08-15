@@ -8,13 +8,13 @@ func _ready() -> void:
 	$MarginContainer/OptionsMenu/MainVolSlider.value = db_to_linear(AudioServer.get_bus_volume_db(AudioServer.get_bus_index("Master")))
 	$MarginContainer/OptionsMenu/MusicVolSlider.value = db_to_linear(AudioServer.get_bus_volume_db(AudioServer.get_bus_index("MUSIC")))
 	$MarginContainer/OptionsMenu/SFXVolSlider.value = db_to_linear(AudioServer.get_bus_volume_db(AudioServer.get_bus_index("SFX")))
-	$TitleScreenMusic.play()
+	
 	
 
 
 
 func _on_play_button_pressed():
-	get_tree().change_scene_to_file("res://Advanced Vehicle Controller/Scenes/test_world.tscn")
+	get_tree().change_scene_to_file("res://mainscene.tscn")
 
 
 func _on_options_button_pressed():

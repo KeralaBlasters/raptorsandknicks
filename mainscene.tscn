@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://dd7vwlb4d5pmn"]
+
+[ext_resource type="Script" uid="uid://dv32gl7pg6dpo" path="res://mainscene.gd" id="1_dn5c8"]
+[ext_resource type="PackedScene" uid="uid://cf56mhdf1eo6w" path="res://Models/speedstate_new_map.glb" id="1_wtdyi"]
+[ext_resource type="PackedScene" uid="uid://d1d0adnny67ho" path="res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn" id="2_xtb1e"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dn5c8"]
+size = Vector3(0.505371, 0.477051, 2.27649)
+
+[node name="MainScene" type="Node3D"]
+script = ExtResource("1_dn5c8")
+
+[node name="speedstate_new_map" parent="." instance=ExtResource("1_wtdyi")]
+
+[node name="Muscle Car" parent="speedstate_new_map" instance=ExtResource("2_xtb1e")]
+transform = Transform3D(-0.0890852, 0, 0.996023, 0, 1, 0, -0.996023, 0, -0.0890852, 131.559, 37.4952, 171.556)
+is_current_veh = true
+use_energy = false
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="speedstate_new_map/Muscle Car"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.573792, 0.876862, 0.159576)
+shape = SubResource("BoxShape3D_dn5c8")
