@@ -234,3 +234,8 @@ use_energy = false
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Muscle Car"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.573792, 0.876862, 0.159576)
 shape = SubResource("BoxShape3D_xtb1e")
+
+[node name="MainMusicPlayer" type="AudioStreamPlayer" parent="."]
+bus = &"MUSIC"
+
+[connection signal="finished" from="MainMusicPlayer" to="." method="_on_main_music_player_finished"]

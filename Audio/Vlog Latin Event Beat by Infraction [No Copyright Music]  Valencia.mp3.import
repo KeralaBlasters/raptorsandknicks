@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c0s2y60fx65jy"
+path="res://.godot/imported/Vlog Latin Event Beat by Infraction [No Copyright Music]  Valencia.mp3-d691542c0f5c8b2d438330bdf2eb4214.mp3str"
+
+[deps]
+
+source_file="res://Audio/Vlog Latin Event Beat by Infraction [No Copyright Music]  Valencia.mp3"
+dest_files=["res://.godot/imported/Vlog Latin Event Beat by Infraction [No Copyright Music]  Valencia.mp3-d691542c0f5c8b2d438330bdf2eb4214.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

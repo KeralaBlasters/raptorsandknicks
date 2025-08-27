@@ -1,7 +1,7 @@
+AudioStreamPlayer
 Node3D
 CollisionShape3D
 MeshInstance3D
-AudioStreamPlayer
 Label
 HSlider
 CheckBox

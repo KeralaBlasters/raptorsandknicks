@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bie3e1srwp34g"
+path="res://.godot/imported/Sport Mexican Latin Trap by Infraction [No Copyright Music]  Mexico Beat.mp3-035c0bf82224acd1aab1f658a27bf027.mp3str"
+
+[deps]
+
+source_file="res://Audio/Sport Mexican Latin Trap by Infraction [No Copyright Music]  Mexico Beat.mp3"
+dest_files=["res://.godot/imported/Sport Mexican Latin Trap by Infraction [No Copyright Music]  Mexico Beat.mp3-035c0bf82224acd1aab1f658a27bf027.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

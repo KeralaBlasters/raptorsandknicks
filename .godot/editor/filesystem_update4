@@ -1,4 +1,5 @@
-res://Advanced Vehicle Controller/Scenes/title_screen.tscn
-res://Advanced Vehicle Controller/Scenes/test_world.tscn
 res://mainscene.tscn
+res://main_music_player.gd
+res://Advanced Vehicle Controller/Scenes/title_screen.tscn
 res://Advanced Vehicle Controller/Scenes/ui.tscn
+res://mainscene.gd
