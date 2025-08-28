@@ -1,7 +1,8 @@
-[gd_scene load_steps=16 format=4 uid="uid://dd7vwlb4d5pmn"]
+[gd_scene load_steps=17 format=4 uid="uid://dd7vwlb4d5pmn"]
 
 [ext_resource type="Script" uid="uid://dv32gl7pg6dpo" path="res://mainscene.gd" id="1_dn5c8"]
 [ext_resource type="PackedScene" uid="uid://d1d0adnny67ho" path="res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn" id="2_xtb1e"]
+[ext_resource type="FontFile" uid="uid://c8hsl52u1yako" path="res://blowbrush.otf" id="3_dn5c8"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f5kpv"]
 resource_name = "wall"
@@ -237,5 +238,28 @@ shape = SubResource("BoxShape3D_xtb1e")
 
 [node name="MainMusicPlayer" type="AudioStreamPlayer" parent="."]
 bus = &"MUSIC"
+
+[node name="IntroText" type="CanvasLayer" parent="."]
+
+[node name="CenterContainer" type="CenterContainer" parent="IntroText"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Text" type="Label" parent="IntroText/CenterContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("3_dn5c8")
+theme_override_font_sizes/font_size = 50
 
 [connection signal="finished" from="MainMusicPlayer" to="." method="_on_main_music_player_finished"]
