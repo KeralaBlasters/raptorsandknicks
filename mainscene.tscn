@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=4 uid="uid://dd7vwlb4d5pmn"]
+[gd_scene load_steps=27 format=4 uid="uid://dd7vwlb4d5pmn"]
 
 [ext_resource type="Script" uid="uid://dv32gl7pg6dpo" path="res://mainscene.gd" id="1_dn5c8"]
 [ext_resource type="PackedScene" uid="uid://d1d0adnny67ho" path="res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn" id="2_xtb1e"]
@@ -162,6 +162,42 @@ data = PackedVector3Array(-159.725, 0, -48.7409, -203.94, 14.2138, 2.2169, -203.
 [sub_resource type="BoxShape3D" id="BoxShape3D_xtb1e"]
 size = Vector3(0.505371, 0.477051, 2.27649)
 
+[sub_resource type="Curve3D" id="Curve3D_dn5c8"]
+closed = true
+bake_interval = 97.41
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -46.5326, 151.209, 10.7548, 0, 0, 0, 0, 0, 0, -39.7005, 130.067, -62.8695, 0, 0, 0, 0, 0, 0, -23.1935, 76.2241, -31.5971, 0, 0, 0, 0, 0, 0, -8.80702, 28.9435, -12.0473, 0, 0, 0, 0, 0, 0, -16.2441, 53.3851, 98.849, 0, 0, 0, 0, 0, 0, -30.8038, 101.235, 227.207, 0, 0, 0, 0, 0, 0, -61.1857, 201.083, 191.997, 0, 0, 0, 0, 0, 0, -84.3714, 277.281, 166.573, 0, 0, 0, 0, 0, 0, -80.3165, 263.955, 104.463, 0, 0, 0, 0, 0, 0, -133.395, 438.394, 37.6123, 0, 0, 0, 0, 0, 0, -128.886, 423.576, -21.0135, 0, 0, 0, 0, 0, 0, -101.449, 333.406, 9.85017, 0, 0, 0, 0, 0, 0, -94.8184, 311.615, -43.8192, 0, 0, 0, 0, 0, 0, -50.6144, 166.341, 8.54108),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+}
+point_count = 14
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5lfti"]
+size = Vector3(5.4678, 1, 27.9998)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sbvtr"]
+size = Vector3(9.30972, 53.929, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fl65m"]
+size = Vector3(3.60535, 1.02148, 14.2013)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_76yo1"]
+size = Vector3(2.87354, 1, 9.01248)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8bn17"]
+size = Vector3(3.64484, 32.2744, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1ftms"]
+size = Vector3(3.27954, 1, 14.062)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0lhry"]
+size = Vector3(4.08276, 24.1032, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0ibrq"]
+size = Vector3(8.39722, 0.653198, 38.6354)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4ofsq"]
+size = Vector3(5.52026, 46.6943, 1)
+
 [node name="MainScene" type="Node3D"]
 script = ExtResource("1_dn5c8")
 
@@ -261,5 +297,71 @@ layout_mode = 2
 size_flags_horizontal = 4
 theme_override_fonts/font = ExtResource("3_dn5c8")
 theme_override_font_sizes/font_size = 50
+
+[node name="Races" type="Node3D" parent="."]
+
+[node name="IntroRace" type="Path3D" parent="Races"]
+transform = Transform3D(0.291103, -0.956692, 0, 0.956692, 0.291103, 0, 0, 0, 1, 472.255, 1.03155, -116.021)
+curve = SubResource("Curve3D_dn5c8")
+
+[node name="StartAndFinish" type="Area3D" parent="Races/IntroRace"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.87161, 22.5831, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Races/IntroRace/StartAndFinish"]
+transform = Transform3D(0.959756, -0.265536, -0.0914259, 0.280744, 0.915466, 0.288278, 0.00714914, -0.302344, 0.953172, -4.41304, 16.2522, -17.4327)
+shape = SubResource("BoxShape3D_5lfti")
+
+[node name="FirstCheckpoint" type="Area3D" parent="Races/IntroRace"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Races/IntroRace/FirstCheckpoint"]
+transform = Transform3D(0.950119, -0.287992, -0.119732, 0.311822, 0.869136, 0.383889, -0.0064941, -0.402075, 0.915584, -42.4429, 140.338, -36.7582)
+shape = SubResource("BoxShape3D_sbvtr")
+
+[node name="SecondCheckpoint" type="Area3D" parent="Races/IntroRace"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.854, 176.988, 2.93573)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Races/IntroRace/SecondCheckpoint"]
+transform = Transform3D(0.94936, -0.27441, -0.15302, 0.314179, 0.824934, 0.469868, -0.00270536, -0.494149, 0.869373, -0.700836, 0.674042, 0.749939)
+shape = SubResource("BoxShape3D_fl65m")
+
+[node name="ThirdCheckpoint" type="Area3D" parent="Races/IntroRace"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -95.5959, 314.17, -40.148)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Races/IntroRace/ThirdCheckpoint"]
+transform = Transform3D(0.955568, 0.0489393, -0.290681, 0.289835, -0.335719, 0.896264, -0.0537245, -0.94069, -0.334987, -2.48205, 4.77777, 7.57416)
+shape = SubResource("BoxShape3D_76yo1")
+
+[node name="FourthCheckpoint" type="Area3D" parent="Races/IntroRace"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Races/IntroRace/FourthCheckpoint"]
+transform = Transform3D(0.959911, -0.269684, 0.0764319, 0.280289, 0.926468, -0.251189, -0.0030702, 0.262542, 0.964916, -132.275, 435.613, 12.2889)
+shape = SubResource("BoxShape3D_8bn17")
+
+[node name="FifthCheckpoint" type="Area3D" parent="Races/IntroRace"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -127.996, 420.652, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Races/IntroRace/FifthCheckpoint"]
+transform = Transform3D(0.949905, -0.291385, -0.113029, 0.311586, 0.854689, 0.415236, -0.0243888, -0.429653, 0.902665, -2.61157, 9.03202, 43.7183)
+shape = SubResource("BoxShape3D_1ftms")
+
+[node name="SixthCheckpoint" type="Area3D" parent="Races/IntroRace"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -79.1423, 260.096, 111.454)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Races/IntroRace/SixthCheckpoint"]
+transform = Transform3D(0.963715, -0.242794, -0.110926, 0.266728, 0.892165, 0.364551, 0.0104535, -0.380911, 0.924553, -1.03022, 3.23383, -0.734029)
+shape = SubResource("BoxShape3D_0lhry")
+
+[node name="SeventhCheckpoint" type="Area3D" parent="Races/IntroRace"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -76.1301, 250.197, 176.383)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Races/IntroRace/SeventhCheckpoint"]
+transform = Transform3D(0.929986, -0.348205, -0.117811, 0.360351, 0.800261, 0.479301, -0.0726153, -0.488197, 0.869707, -2.23445, 7.31721, -1.94156)
+shape = SubResource("BoxShape3D_0ibrq")
+
+[node name="EighthCheckpoint" type="Area3D" parent="Races/IntroRace"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Races/IntroRace/EighthCheckpoint"]
+transform = Transform3D(0.964298, -0.248322, -0.0920066, 0.258514, 0.807335, 0.530453, -0.0574433, -0.5353, 0.842706, -25.5647, 88.1506, 209.199)
+shape = SubResource("BoxShape3D_4ofsq")
 
 [connection signal="finished" from="MainMusicPlayer" to="." method="_on_main_music_player_finished"]

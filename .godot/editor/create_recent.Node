@@ -1,13 +1,14 @@
+CollisionShape3D
+Area3D
+Node3D
+Path3D
 CenterContainer
 Timer
 CanvasLayer
 Label
 AudioStreamPlayer
-Node3D
-CollisionShape3D
 MeshInstance3D
 HSlider
 CheckBox
 Button
 VBoxContainer
-TextureRect
