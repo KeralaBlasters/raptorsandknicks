@@ -1,8 +1,24 @@
-[gd_scene load_steps=17 format=4 uid="uid://dd7vwlb4d5pmn"]
+[gd_scene load_steps=21 format=4 uid="uid://dd7vwlb4d5pmn"]
 
 [ext_resource type="Script" uid="uid://dv32gl7pg6dpo" path="res://mainscene.gd" id="1_dn5c8"]
 [ext_resource type="PackedScene" uid="uid://d1d0adnny67ho" path="res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn" id="2_xtb1e"]
 [ext_resource type="FontFile" uid="uid://c8hsl52u1yako" path="res://blowbrush.otf" id="3_dn5c8"]
+[ext_resource type="PackedScene" uid="uid://bwcxhvcvv554n" path="res://nightskysaturn.glb" id="4_5lfti"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_dn5c8"]
+sky_top_color = Color(0.128087, 0.161108, 0.207029, 1)
+sky_horizon_color = Color(0.357323, 0.357829, 0.360309, 1)
+ground_horizon_color = Color(0.357323, 0.357829, 0.360309, 1)
+energy_multiplier = 0.65
+
+[sub_resource type="Sky" id="Sky_5lfti"]
+sky_material = SubResource("ProceduralSkyMaterial_dn5c8")
+
+[sub_resource type="Environment" id="Environment_sbvtr"]
+background_mode = 2
+sky = SubResource("Sky_5lfti")
+tonemap_mode = 2
+glow_enabled = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f5kpv"]
 resource_name = "wall"
@@ -165,6 +181,15 @@ size = Vector3(0.505371, 0.477051, 2.27649)
 [node name="MainScene" type="Node3D"]
 script = ExtResource("1_dn5c8")
 
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_sbvtr")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.440652, 0.236275, 0, 0.472551, 0.881303, -0.5, 0.763231, -0.409241, 0, 0, 0)
+light_color = Color(0.197937, 0.197937, 0.197937, 1)
+light_energy = 0.5
+shadow_enabled = true
+
 [node name="map_3_osm_buildings" type="MeshInstance3D" parent="."]
 mesh = SubResource("ArrayMesh_xxjq3")
 skeleton = NodePath("")
@@ -261,5 +286,8 @@ layout_mode = 2
 size_flags_horizontal = 4
 theme_override_fonts/font = ExtResource("3_dn5c8")
 theme_override_font_sizes/font_size = 50
+
+[node name="nightskysaturn" parent="." instance=ExtResource("4_5lfti")]
+transform = Transform3D(-3.03641, 0, -99.9539, 0, 100, 0, 99.9539, 0, -3.03641, -62.4695, 608.976, 35.3174)
 
 [connection signal="finished" from="MainMusicPlayer" to="." method="_on_main_music_player_finished"]
