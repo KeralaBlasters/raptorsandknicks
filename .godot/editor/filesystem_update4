@@ -1,6 +1,6 @@
-res://Advanced Vehicle Controller/Scenes/title_screen.tscn
 res://mainscene.tscn
-res://Advanced Vehicle Controller/Scenes/ui.tscn
-res://sky.tscn
-res://night_sky.tres
 res://stylized_sky.gdshader
+res://sky/examples/night_sky.tres
+res://Advanced Vehicle Controller/Scenes/title_screen.tscn
+res://Advanced Vehicle Controller/Scenes/ui.tscn
+res://sky/examples/sky.tscn

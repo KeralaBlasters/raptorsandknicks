@@ -4,21 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://d1d0adnny67ho" path="res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn" id="2_xtb1e"]
 [ext_resource type="FontFile" uid="uid://c8hsl52u1yako" path="res://blowbrush.otf" id="3_dn5c8"]
 [ext_resource type="PackedScene" uid="uid://bwcxhvcvv554n" path="res://nightskysaturn.glb" id="4_5lfti"]
-
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_dn5c8"]
-sky_top_color = Color(0.128087, 0.161108, 0.207029, 1)
-sky_horizon_color = Color(0.357323, 0.357829, 0.360309, 1)
-ground_horizon_color = Color(0.357323, 0.357829, 0.360309, 1)
-energy_multiplier = 0.65
-
-[sub_resource type="Sky" id="Sky_5lfti"]
-sky_material = SubResource("ProceduralSkyMaterial_dn5c8")
-
-[sub_resource type="Environment" id="Environment_sbvtr"]
-background_mode = 2
-sky = SubResource("Sky_5lfti")
-tonemap_mode = 2
-glow_enabled = true
+[ext_resource type="Material" uid="uid://m80rmki4fbox" path="res://sky/examples/night_sky.tres" id="5_sbvtr"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f5kpv"]
 resource_name = "wall"
@@ -178,11 +164,22 @@ data = PackedVector3Array(-159.725, 0, -48.7409, -203.94, 14.2138, 2.2169, -203.
 [sub_resource type="BoxShape3D" id="BoxShape3D_xtb1e"]
 size = Vector3(0.505371, 0.477051, 2.27649)
 
+[sub_resource type="Sky" id="Sky_ieg05"]
+sky_material = ExtResource("5_sbvtr")
+
+[sub_resource type="Environment" id="Environment_fl65m"]
+background_mode = 2
+sky = SubResource("Sky_ieg05")
+ambient_light_source = 2
+ambient_light_color = Color(0.465701, 0.310239, 0.398559, 1)
+ambient_light_energy = 0.5
+tonemap_mode = 2
+glow_enabled = true
+glow_bloom = 0.2
+adjustment_enabled = true
+
 [node name="MainScene" type="Node3D"]
 script = ExtResource("1_dn5c8")
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_sbvtr")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.866025, -0.440652, 0.236275, 0, 0.472551, 0.881303, -0.5, 0.763231, -0.409241, 0, 0, 0)
@@ -253,7 +250,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.4793)
 shape = SubResource("ConcavePolygonShape3D_xtb1e")
 
 [node name="Muscle Car" parent="." instance=ExtResource("2_xtb1e")]
-transform = Transform3D(-0.0890852, 0, 0.996023, 0, 1, 0, -0.996023, 0, -0.0890852, -32.6882, 22.8983, -7.14177)
+transform = Transform3D(-0.0890852, 0, 0.996023, 0, 1, 0, -0.996023, 0, -0.0890852, 471.337, 9.00536, -7.14177)
 is_current_veh = true
 use_energy = false
 
@@ -289,5 +286,12 @@ theme_override_font_sizes/font_size = 50
 
 [node name="nightskysaturn" parent="." instance=ExtResource("4_5lfti")]
 transform = Transform3D(-3.03641, 0, -99.9539, 0, 100, 0, 99.9539, 0, -3.03641, -62.4695, 608.976, 35.3174)
+
+[node name="WorldEnvironment2" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_fl65m")
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.984196, 0.113116, -0.136249, 0, 0.7694, 0.638767, 0.177085, -0.628672, 0.75724, 0, 0, 0)
+shadow_enabled = true
 
 [connection signal="finished" from="MainMusicPlayer" to="." method="_on_main_music_player_finished"]
