@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=4 uid="uid://dd7vwlb4d5pmn"]
+[gd_scene load_steps=23 format=4 uid="uid://dd7vwlb4d5pmn"]
 
 [ext_resource type="Script" uid="uid://dv32gl7pg6dpo" path="res://mainscene.gd" id="1_dn5c8"]
 [ext_resource type="PackedScene" uid="uid://d1d0adnny67ho" path="res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn" id="2_xtb1e"]
@@ -181,6 +181,9 @@ glow_enabled = true
 glow_bloom = 0.2
 adjustment_enabled = true
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_sbvtr"]
+size = Vector3(200, 2345.57, 5)
+
 [node name="MainScene" type="Node3D"]
 script = ExtResource("1_dn5c8")
 
@@ -258,7 +261,7 @@ shape = SubResource("ConcavePolygonShape3D_xtb1e")
 shape = SubResource("ConcavePolygonShape3D_sbvtr")
 
 [node name="Muscle Car" parent="." instance=ExtResource("2_xtb1e")]
-transform = Transform3D(-0.0890852, 0, 0.996023, 0, 1, 0, -0.996023, 0, -0.0890852, 471.337, 9.00536, -7.14177)
+transform = Transform3D(-0.0890852, 0, 0.996023, 0, 1, 0, -0.996023, 0, -0.0890852, 471.337, 2.16761, -7.14177)
 is_current_veh = true
 use_energy = false
 
@@ -301,5 +304,27 @@ environment = SubResource("Environment_fl65m")
 [node name="DirectionalLight3D2" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.984196, 0.113116, -0.136249, 0, 0.7694, 0.638767, 0.177085, -0.628672, 0.75724, 0, 0, 0)
 shadow_enabled = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(0.532906, 0, -0.846175, 0, 1, 0, 0.846175, 0, 0.532906, -393.449, 0, 276.538)
+shape = SubResource("BoxShape3D_sbvtr")
+debug_color = Color(0.960784, 0, 0.509804, 1)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(-0.00450301, 0, -0.99999, 0, 1, 0, 0.99999, 0, -0.00450301, -444.565, 0, 95.1377)
+shape = SubResource("BoxShape3D_sbvtr")
+debug_color = Color(0.960784, 0, 0.509804, 1)
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(-0.0470194, 0, -0.998894, 0, 1, 0, 0.998894, 0, -0.0470194, -440.068, 989.704, -90.9262)
+shape = SubResource("BoxShape3D_sbvtr")
+debug_color = Color(0.960784, 0, 0.509804, 1)
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(-0.103539, 0, -0.994625, 0, 1, 0, 0.994625, 0, -0.103539, -422.082, 989.704, -291.023)
+shape = SubResource("BoxShape3D_sbvtr")
+debug_color = Color(0.960784, 0, 0.509804, 1)
 
 [connection signal="finished" from="MainMusicPlayer" to="." method="_on_main_music_player_finished"]
