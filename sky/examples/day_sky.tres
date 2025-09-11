@@ -1,4 +1,4 @@
-[gd_resource type="ShaderMaterial" load_steps=12 format=3 uid="uid://dh6ykun8bv60u"]
+[gd_resource type="ShaderMaterial" load_steps=12 format=3 uid="uid://ccgv3v4iqjask"]
 
 [ext_resource type="Shader" path="res://sky/stylized_sky.gdshader" id="1_i5n5i"]
 
