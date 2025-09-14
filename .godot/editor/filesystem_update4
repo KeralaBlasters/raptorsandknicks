@@ -1,1 +1,6 @@
+res://Advanced Vehicle Controller/Scenes/title_screen.tscn
+res://Advanced Vehicle Controller/Scripts/Race_follow_AI.gd
 res://mainscene.tscn
+res://Advanced Vehicle Controller/Scenes/ui.tscn
+res://Advanced Vehicle Controller/Vehicle/AI_Vehicles/AI_Muscle_Car.tscn
+res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn

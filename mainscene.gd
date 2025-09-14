@@ -2,20 +2,34 @@ extends Node3D
 
 @onready var music_player = $MainMusicPlayer
 @onready var text = $IntroText/CenterContainer/Text
+@onready var intro_spawn = $Races/IntroRace/StartAndFinish/Marker3D
+var can_start_intro_race = false
 
 var last_index: int = -1
+
+var ai_intro_racer = preload("res://Advanced Vehicle Controller/Vehicle/AI_Vehicles/AI_Muscle_Car.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	show_intro()
 	Ui.show()
 	randomize()
-	print("music played ")
 	play_random_track()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	
+	
+	
+	if can_start_intro_race and Input.is_action_just_pressed("Enter Race"):
+		start_intro_race()
+		can_start_intro_race = false
+	else:
+		pass
+		
+	
+	
+	
 
 
 var music_tracks = [
@@ -62,3 +76,36 @@ func _on_main_music_player_finished() -> void:
 		play_random_track()
 	else:
 		pass
+
+
+func _on_enter_race_area_body_entered(body: Node3D) -> void:
+	if body.name == "Muscle Car":
+		text.text = "PRESS ENTER TO START THE INTRO RACE"
+		can_start_intro_race = true
+	else:
+		pass
+
+func _on_enter_race_area_body_exited(body: Node3D) -> void:
+	if body.name == "Muscle Car":
+		text.text = ""
+		can_start_intro_race = false
+	else:
+		pass
+		
+	
+	
+
+
+func start_intro_race():
+	var intro_car = ai_intro_racer.instantiate()
+	intro_car.transform.origin = intro_spawn.transform.origin
+	add_child(intro_car)
+	text.text = "3"
+	await get_tree().create_timer(1.0).timeout
+	text.text = "2"
+	await get_tree().create_timer(1.0).timeout
+	text.text = "1"
+	await get_tree().create_timer(1.0).timeout
+	text.text = "GO!"
+	await get_tree().create_timer(2.5).timeout
+	text.text = ""

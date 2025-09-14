@@ -308,7 +308,7 @@ transform = Transform3D(0.291103, -0.956692, 0, 0.956692, 0.291103, 0, 0, 0, 1, 
 curve = SubResource("Curve3D_dn5c8")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Races/IntroRace"]
-transform = Transform3D(0.995722, 0.0254021, -0.0888395, -1.86265e-09, 0.961469, 0.274915, 0.0923998, -0.273739, 0.957355, -46.5326, 151.209, 10.7548)
+transform = Transform3D(0.995722, 0.0254021, -0.0888395, -1.86264e-09, 0.961469, 0.274915, 0.0923998, -0.273739, 0.957355, -46.5326, 151.209, 10.7548)
 
 [node name="EnterIntroRaceArea" type="Area3D" parent="Races/IntroRace"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.44336, 8.02994, -2.73145)
