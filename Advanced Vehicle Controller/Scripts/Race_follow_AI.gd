@@ -47,22 +47,27 @@ class_name MVehicleBasicFollowAI
 
 
 
-var waypoints = [$Races/IntroRace/StartAndFinish, $Races/IntroRace/FirstCheckpoint, $Races/IntroRace/SecondCheckpoint, $Races/IntroRace/ThirdCheckpoint, $Races/IntroRace/FourthCheckpoint, $Races/IntroRace/FifthCheckpoint, $Races/IntroRace/SixthCheckpoint, $Races/IntroRace/SeventhCheckpoint, $Races/IntroRace/EighthCheckpoint]
+
+
+@export var waypoints: Array[Node3D] = []
 var current_waypoint = 0
 var steering_sensitivity = 1.0
 
-var path_follow = PathFollow3D
 
-
+@export var active = false
+@export var move_speed: float = 10.0
 
 
 
 var energy : float # Variable in which we store vehicle energy or fuel
 
 func _ready() -> void:
-	var target_ray = $Races/IntroRace/PathFollow3D
 	
-	get_node("Races/IntroRace/EnterIntroRaceArea")
+	
+	
+	
+	
+	var target_ray = $Races/IntroRace/PathFollow3D
 	
 	
 	
@@ -76,6 +81,11 @@ func _ready() -> void:
 		energy = max_energy
 
 func _physics_process(delta: float) -> void:
+	
+	if !active:
+		return
+	
+	
 	print("Current Energy: " + str(energy))
 	var velocity_xz = Vector3(linear_velocity.x, 0, linear_velocity.z) # We take X/Z Velocity of this AI and calculate its length
 	var speed_xz = velocity_xz.length() * 2.8
@@ -115,7 +125,7 @@ func _physics_process(delta: float) -> void:
 		return
 		
 	
-	var target_pos = waypoints[current_waypoint].global_transform.origin #getting the target position
+	var target_pos = waypoints[current_waypoint].global_position #getting the target position
 	
 	var direction = (target_pos - global_transform.origin).normalized() #getting the direction from the ai car to the waypoint
 	

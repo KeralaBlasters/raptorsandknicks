@@ -67,13 +67,8 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_poonp")
 
-[node name="AI_NightSky_NavigationMesh" type="VehicleBody3D" node_paths=PackedStringArray("nav", "front_rc", "back_rc", "left_lite_rc", "right_lite_rc") groups=["Vehicle"]]
+[node name="AI_NightSky_NavigationMesh" type="VehicleBody3D" groups=["Vehicle"]]
 script = ExtResource("1_gfe7f")
-nav = NodePath("NavigationAgent3D")
-front_rc = NodePath("FrontRC")
-back_rc = NodePath("BackRC")
-left_lite_rc = NodePath("LeftLiteRC")
-right_lite_rc = NodePath("RightLiteRC")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("ConvexPolygonShape3D_b8f70")

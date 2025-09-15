@@ -4,6 +4,7 @@ extends Node3D
 @onready var text = $IntroText/CenterContainer/Text
 @onready var intro_spawn = $Races/IntroRace/StartAndFinish/Marker3D
 var can_start_intro_race = false
+@onready var intro_race_follow: PathFollow3D = $Races/IntroRace/IntroRaceFollow
 
 var last_index: int = -1
 
@@ -97,9 +98,18 @@ func _on_enter_race_area_body_exited(body: Node3D) -> void:
 
 
 func start_intro_race():
-	var intro_car = ai_intro_racer.instantiate()
-	intro_car.transform.origin = intro_spawn.transform.origin
+	var intro_race_path = $Races/IntroRace/IntroRaceFollow
+	var intro_ai_spawn = $Races/IntroRace/Spawn
+	var intro_car = ai_intro_racer.instantiate() 
+	var path = intro_race_path.get_parent() as Path3D
 	add_child(intro_car)
+	intro_race_follow.target_veh = intro_car
+	intro_car.target_ray = intro_race_path
+	intro_car.global_transform.origin = intro_ai_spawn.global_transform.origin
+	
+	
+	
+	
 	text.text = "3"
 	await get_tree().create_timer(1.0).timeout
 	text.text = "2"
@@ -109,3 +119,5 @@ func start_intro_race():
 	text.text = "GO!"
 	await get_tree().create_timer(2.5).timeout
 	text.text = ""
+	intro_race_follow.active = true
+	intro_car.active = true

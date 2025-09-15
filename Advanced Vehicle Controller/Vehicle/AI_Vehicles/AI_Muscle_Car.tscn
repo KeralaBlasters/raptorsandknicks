@@ -67,8 +67,9 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_bdd1i")
 
 [node name="AI_Muscle" type="VehicleBody3D" groups=["Vehicle"]]
+transform = Transform3D(0.405732, 0.913992, 0, -0.913992, 0.405732, 0, 0, 0, 1, 0, 0, 0)
 script = ExtResource("1_vk038")
-energy_consumption_rate = 0.0
+max_speed = 80.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("ConvexPolygonShape3D_yu63s")

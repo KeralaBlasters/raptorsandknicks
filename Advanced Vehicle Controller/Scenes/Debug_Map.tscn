@@ -2116,10 +2116,8 @@ veh_color = Color(0.764655, 0.485504, 0.280555, 1)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 1, -144)
 is_current_veh = true
 
-[node name="AI_Muscle" parent="." node_paths=PackedStringArray("target_ray") instance=ExtResource("7_cib27")]
+[node name="AI_Muscle" parent="." instance=ExtResource("7_cib27")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 81, 1, -83)
-max_speed = 120.0
-target_ray = NodePath("../Path3D/PathFollow3D")
 
 [node name="Camera3D" type="Camera3D" parent="AI_Muscle"]
 transform = Transform3D(-0.866025, -0.12941, 0.482963, -1.13133e-08, 0.965926, 0.258819, -0.5, 0.224144, -0.836516, 3, 2, -4)
@@ -2127,14 +2125,13 @@ cull_mask = 1048063
 
 [node name="AI_NightSky_NavigationMesh" parent="." instance=ExtResource("9_ado17")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 38, 1, -94)
-max_speed = 120.0
 
 [node name="Path3D" type="Path3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 curve = SubResource("Curve3D_qtsp6")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Path3D" node_paths=PackedStringArray("target_veh")]
-transform = Transform3D(-0.0124968, 0, 0.999701, 0, 0.999927, 0, -0.999747, 0, -0.0124962, 58.0049, 0, -83.1686)
+transform = Transform3D(-0.0124968, 0, 0.999701, 0, 0.999932, 0, -0.999747, 0, -0.0124962, 58.0049, 0, -83.1686)
 rotation_mode = 4
 script = ExtResource("7_m3kbc")
 active = true
