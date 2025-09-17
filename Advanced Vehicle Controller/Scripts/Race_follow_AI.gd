@@ -18,7 +18,7 @@ class_name MVehicleBasicFollowAI
 @export_group("AI")
 @export var distance_from_target : bool = false # If we want to check distance to our target
 @export var max_speed : float = 50.0 # Max power this car will receive
-@export var target_ray : Node3D # This is our target that AI will follow
+@export var target_ray : PathFollow3D # This is our target that AI will follow
 @export_range(1.0, 45.0) var max_steer_angle : float = 40.0 # Max angle our car can turn its wheels
 @export var follow_offset : Vector3 = Vector3(0, 0, 0)  # Adds offset for our target in case we want to mix up its target location
 
@@ -40,9 +40,35 @@ class_name MVehicleBasicFollowAI
 @export_range(0,3) var wet_grip : float = 2.0 # Modifier for penalty on wet surface, "closer to wheel_grip, More drifty it becomse!" Used for handbreak but can also be used in the environment if desired
 @export var all_wheels : Array [VehicleWheel3D]
 
+@export var path = Path3D
+
+
+
+
+
+
+
+
+@export var waypoints: Array[Node3D] = []
+var current_waypoint = 0
+var steering_sensitivity = 1.0
+
+
+@export var active = false
+@export var move_speed: float = 10.0
+
+
+
 var energy : float # Variable in which we store vehicle energy or fuel
 
 func _ready() -> void:
+	
+	
+	
+	
+	
+	var target_ray = $Races/IntroRace/PathFollow3D
+	
 	
 	
 	for x in all_wheels: # Sets the default grip for all the wheels that are in variable
@@ -55,7 +81,12 @@ func _ready() -> void:
 		energy = max_energy
 
 func _physics_process(delta: float) -> void:
-	#print("Current Energy: " + str(energy))
+	
+	if !active:
+		return
+	
+	
+	print("Current Energy: " + str(energy))
 	var velocity_xz = Vector3(linear_velocity.x, 0, linear_velocity.z) # We take X/Z Velocity of this AI and calculate its length
 	var speed_xz = velocity_xz.length() * 2.8
 	
@@ -86,3 +117,25 @@ func _physics_process(delta: float) -> void:
 			engine_force = max_speed # Apply our speed to engine force
 		else:
 			engine_force = max_speed / drain_penalty
+			
+			
+	
+	
+	if current_waypoint >= waypoints.size():
+		return
+		
+	
+	var target_pos = waypoints[current_waypoint].global_position #getting the target position
+	
+	var direction = (target_pos - global_transform.origin).normalized() #getting the direction from the ai car to the waypoint
+	
+	var steer_amount = direction.dot(global_transform.basis.x) #how much to steer (the dot product for the angle)
+	steer_amount = clamp(steer_amount, -1, 1)
+	
+	steering = steer_amount * steering_sensitivity #making the car steer
+	
+	engine_force = max_speed #making the car accelerate
+	
+	#making the ai car go to the next checkpoint when it is close to the current waypoint that it is going to
+	if global_transform.origin.distance_to(target_pos) < 5.0:
+		current_waypoint += 1

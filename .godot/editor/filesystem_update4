@@ -1,7 +1,7 @@
 res://mainscene.tscn
-res://night_sky.tres
-res://stylized_sky.gdshader
-res://Advanced Vehicle Controller/Scenes/ui.tscn
 res://Advanced Vehicle Controller/Scenes/title_screen.tscn
-res://sky/examples/sky.tscn
-res://nightskysaturn.tscn
+res://Advanced Vehicle Controller/Scenes/ui.tscn
+res://Advanced Vehicle Controller/Vehicle/AI_Vehicles/AI_Muscle_Car.tscn
+res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn
+res://Advanced Vehicle Controller/Vehicle/AI_Vehicles/AI_NightSky.tscn
+res://Advanced Vehicle Controller/Scripts/Race_follow_AI.gd
