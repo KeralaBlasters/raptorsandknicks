@@ -311,7 +311,7 @@ transform = Transform3D(0.291103, -0.956692, 0, 0.956692, 0.291103, 0, 0, 0, 1, 
 curve = SubResource("Curve3D_dn5c8")
 
 [node name="IntroRaceFollow" type="PathFollow3D" parent="Races/IntroRace"]
-transform = Transform3D(0.843015, 0.504797, -0.185724, 0.502562, -0.616174, 0.606424, 0.191683, -0.604569, -0.773139, -32.3514, 106.127, -69.6849)
+transform = Transform3D(0.843177, 0.504525, -0.185724, 0.502364, -0.616337, 0.606423, 0.191487, -0.60463, -0.77314, -32.3514, 106.127, -69.6852)
 progress = 167.87
 script = ExtResource("4_5lfti")
 speed = -70.0
