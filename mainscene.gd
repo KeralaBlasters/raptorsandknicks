@@ -6,6 +6,7 @@ extends Node3D
 var can_start_intro_race = false
 @onready var intro_race_follow: PathFollow3D = $Races/IntroRace/IntroRaceFollow
 
+
 var last_index: int = -1
 
 var ai_intro_racer = preload("res://Advanced Vehicle Controller/Vehicle/AI_Vehicles/AI_Muscle_Car.tscn")
@@ -79,13 +80,6 @@ func _on_main_music_player_finished() -> void:
 		pass
 
 
-func _on_enter_race_area_body_entered(body: Node3D) -> void:
-	if body.name == "Muscle Car":
-		text.text = "PRESS ENTER TO START THE INTRO RACE"
-		can_start_intro_race = true
-	else:
-		pass
-
 func _on_enter_race_area_body_exited(body: Node3D) -> void:
 	if body.name == "Muscle Car":
 		text.text = ""
@@ -121,3 +115,25 @@ func start_intro_race():
 	text.text = ""
 	intro_race_follow.active = true
 	intro_car.active = true
+
+
+
+
+func _on_enter_intro_race_area_body_entered(body: Node3D) -> void:
+	if body.name == "Muscle Car":
+		text.text = "PRESS ENTER TO START THE INTRO RACE"
+		can_start_intro_race = true
+	else:
+		pass
+		
+
+
+
+
+func _on_enter_intro_race_area_body_exited(body: Node3D) -> void:
+	if body.name == "Muscle Car":
+		text.text = ""
+		can_start_intro_race = false
+	else:
+		pass
+		

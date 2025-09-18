@@ -5,7 +5,7 @@
 [ext_resource type="FontFile" uid="uid://c8hsl52u1yako" path="res://blowbrush.otf" id="3_u514n"]
 [ext_resource type="PackedScene" uid="uid://bwcxhvcvv554n" path="res://nightskysaturn.glb" id="4_x6rqc"]
 [ext_resource type="Material" uid="uid://kr5tlx4sqgtp" path="res://night_sky.tres" id="5_iq26o"]
-[ext_resource type="PackedScene" path="res://WorldCollisions.tscn" id="6_ldy72"]
+[ext_resource type="PackedScene" uid="uid://bq62kd05pfgpr" path="res://WorldCollisions.tscn" id="6_ldy72"]
 [ext_resource type="Script" uid="uid://bs8760v28w752" path="res://intro_race_follow.gd" id="7_15qjk"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f5kpv"]
@@ -447,3 +447,5 @@ transform = Transform3D(0.964298, -0.248322, -0.0920066, 0.258514, 0.807335, 0.5
 shape = SubResource("BoxShape3D_lqtqk")
 
 [connection signal="finished" from="MainMusicPlayer" to="." method="_on_main_music_player_finished"]
+[connection signal="body_entered" from="Races/IntroRace/IntroRaceCheckpoints/EnterIntroRaceArea" to="." method="_on_enter_intro_race_area_body_entered"]
+[connection signal="body_exited" from="Races/IntroRace/IntroRaceCheckpoints/EnterIntroRaceArea" to="." method="_on_enter_intro_race_area_body_exited"]
