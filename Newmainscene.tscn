@@ -1,8 +1,9 @@
-[gd_scene load_steps=36 format=4 uid="uid://bvn1fp4ootpmv"]
+[gd_scene load_steps=37 format=4 uid="uid://bvn1fp4ootpmv"]
 
 [ext_resource type="Script" uid="uid://dv32gl7pg6dpo" path="res://mainscene.gd" id="1_kx2fw"]
 [ext_resource type="PackedScene" uid="uid://d1d0adnny67ho" path="res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn" id="2_15qjk"]
 [ext_resource type="FontFile" uid="uid://c8hsl52u1yako" path="res://blowbrush.otf" id="3_u514n"]
+[ext_resource type="PackedScene" uid="uid://di4mprib5j61x" path="res://pause_menu.tscn" id="3_x6rqc"]
 [ext_resource type="PackedScene" uid="uid://bwcxhvcvv554n" path="res://nightskysaturn.glb" id="4_x6rqc"]
 [ext_resource type="Material" uid="uid://kr5tlx4sqgtp" path="res://night_sky.tres" id="5_iq26o"]
 [ext_resource type="PackedScene" uid="uid://bq62kd05pfgpr" path="res://WorldCollisions.tscn" id="6_ldy72"]
@@ -314,6 +315,12 @@ bus = &"MUSIC"
 
 [node name="IntroText" type="CanvasLayer" parent="."]
 
+[node name="PauseMenu" parent="IntroText" instance=ExtResource("3_x6rqc")]
+offset_left = -3.0
+offset_top = 3.0
+offset_right = -3.0
+offset_bottom = 3.0
+
 [node name="CenterContainer" type="CenterContainer" parent="IntroText"]
 anchors_preset = 8
 anchor_left = 0.5
@@ -354,7 +361,7 @@ transform = Transform3D(0.291103, -0.956692, 0, 0.956692, 0.291103, 0, 0, 0, 1, 
 curve = SubResource("Curve3D_u514n")
 
 [node name="IntroRaceFollow" type="PathFollow3D" parent="Races/IntroRace"]
-transform = Transform3D(0.843177, 0.504525, -0.185724, 0.502364, -0.616337, 0.606423, 0.191487, -0.60463, -0.77314, -32.3514, 106.127, -69.6852)
+transform = Transform3D(0.843176, 0.504525, -0.185724, 0.502363, -0.616337, 0.606423, 0.191487, -0.60463, -0.77314, -32.3514, 106.127, -69.6852)
 progress = 167.87
 script = ExtResource("7_15qjk")
 speed = -70.0

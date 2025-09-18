@@ -179,8 +179,10 @@ omni_attenuation = 0.615
 [node name="Car_Engine_Sound" type="AudioStreamPlayer3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.872211, 1.07921)
 stream = ExtResource("6_j1nnm")
+bus = &"SFX"
 
 [node name="Tyre_Squeek_Sound" type="AudioStreamPlayer3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.245587, -1.04249)
 stream = ExtResource("7_gtwtr")
 volume_db = -15.0
+bus = &"SFX"
