@@ -56,6 +56,8 @@ func show_intro():
 	await get_tree().create_timer(3.0).timeout
 	text.text = "PRESS C TO CHANGE YOUR VIEW"
 	await get_tree().create_timer(3.0).timeout
+	text.text = "PRESS ESCAPE TO PAUSE THE GAME"
+	await get_tree().create_timer(3.0).timeout
 	text.text = "GOOD LUCK AND BECOME THE BEST RACER IN THE CITY"
 	await get_tree().create_timer(3.0).timeout
 	text.text = ""
