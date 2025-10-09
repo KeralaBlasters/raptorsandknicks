@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://boelh3seo03yc"]
+
+[ext_resource type="PackedScene" uid="uid://dbajuf2k6yre7" path="res://Advanced Vehicle Controller/Scenes/start_arrow.glb" id="1_bdvhd"]
+
+[node name="start_arrow" instance=ExtResource("1_bdvhd")]
+
+[node name="Arrow" parent="." index="0"]
+transform = Transform3D(1.19209e-07, 1.19209e-07, -1, -1, 0, -1.19209e-07, 0, 1, 1.19209e-07, 0.11483, 2.36609, 0.113981)
+
+[node name="AnimationPlayer" parent="." index="1"]
+autoplay = "ArrowAction"

@@ -17,6 +17,7 @@ func _ready() -> void:
 	Ui.show()
 	randomize()
 	play_random_track()
+	$Races/IntroRace/Arrows.hide()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=4 uid="uid://bvn1fp4ootpmv"]
+[gd_scene load_steps=40 format=4 uid="uid://bvn1fp4ootpmv"]
 
 [ext_resource type="Script" uid="uid://dv32gl7pg6dpo" path="res://mainscene.gd" id="1_kx2fw"]
 [ext_resource type="PackedScene" uid="uid://d1d0adnny67ho" path="res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn" id="2_15qjk"]
@@ -8,7 +8,8 @@
 [ext_resource type="Material" uid="uid://kr5tlx4sqgtp" path="res://night_sky.tres" id="5_iq26o"]
 [ext_resource type="PackedScene" uid="uid://bq62kd05pfgpr" path="res://WorldCollisions.tscn" id="6_ldy72"]
 [ext_resource type="Script" uid="uid://bs8760v28w752" path="res://intro_race_follow.gd" id="7_15qjk"]
-[ext_resource type="PackedScene" uid="uid://b7evx6068aunm" path="res://Advanced Vehicle Controller/Scenes/arrow (1).glb" id="9_x6rqc"]
+[ext_resource type="PackedScene" uid="uid://boelh3seo03yc" path="res://start_arrow.tscn" id="8_iq26o"]
+[ext_resource type="PackedScene" uid="uid://muiau6h8mera" path="res://Advanced Vehicle Controller/Scenes/arrow.glb" id="9_x6rqc"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f5kpv"]
 resource_name = "wall"
@@ -364,8 +365,11 @@ shadow_enabled = true
 transform = Transform3D(0.291103, -0.956692, 0, 0.956692, 0.291103, 0, 0, 0, 1, 472.255, 0.41621, -116.021)
 curve = SubResource("Curve3D_u514n")
 
+[node name="start_arrow" parent="Races/IntroRace" instance=ExtResource("8_iq26o")]
+transform = Transform3D(4.07219, 14.3504, -1.57607, -13.383, 4.36654, 5.17964, 5.41412, 3.86408e-07, 13.9888, -0.248505, 10.5537, -3.27281)
+
 [node name="IntroRaceFollow" type="PathFollow3D" parent="Races/IntroRace"]
-transform = Transform3D(-0.907155, 0.317248, -0.276411, -0.138909, 0.394287, 0.908413, 0.397183, 0.862482, -0.313612, -11.6346, 38.2362, -18.4825)
+transform = Transform3D(-0.907191, 0.317146, -0.276411, -0.138953, 0.394272, 0.908413, 0.397086, 0.862527, -0.313612, -11.6346, 38.2365, -18.4826)
 progress = 110.0
 script = ExtResource("7_15qjk")
 speed = -80.0
@@ -464,8 +468,34 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.3012, 53.5729, 86.7305)
 transform = Transform3D(0.951755, -0.290102, -0.100021, 0.306801, 0.893208, 0.328714, -0.00602054, -0.343541, 0.939118, 5.11398, -5.90274, 2.75802)
 shape = SubResource("BoxShape3D_u514n")
 
-[node name="arrow (1)" parent="." instance=ExtResource("9_x6rqc")]
-transform = Transform3D(-0.291474, 28.3044, -9.93865, -29.9984, -0.308918, -8.15195e-09, -0.102341, 9.93813, 28.3059, 388.487, 116.871, -152.999)
+[node name="Arrows" type="Node3D" parent="Races/IntroRace"]
+
+[node name="Arrow1" parent="Races/IntroRace/Arrows" instance=ExtResource("9_x6rqc")]
+transform = Transform3D(-1.07291, 7.65353, -2.06695, 3.52607, 2.32882, 6.79289, 7.1004, 0, -3.68569, -53.5503, 143.33, -83.2364)
+
+[node name="Arrow2" parent="Races/IntroRace/Arrows" instance=ExtResource("9_x6rqc")]
+transform = Transform3D(-2.19477, 7.65354, 0.778718, 7.21298, 2.32882, -2.55921, -2.67506, 1.61503e-07, -7.5395, -51.3692, 135.699, 23.2469)
+
+[node name="Arrow3" parent="Races/IntroRace/Arrows" instance=ExtResource("9_x6rqc")]
+transform = Transform3D(-0.634204, 5.74015, -1.62741, 2.08428, 1.74662, 5.34838, 5.59049, -8.9407e-07, -2.17863, -104.18, 315.039, -44.9639)
+
+[node name="Arrow4" parent="Races/IntroRace/Arrows" instance=ExtResource("9_x6rqc")]
+transform = Transform3D(-2.22051, 7.65353, 0.701957, 7.29757, 2.32882, -2.30694, -2.41137, -1.01223e-06, -7.62793, -113.411, 334.933, 24.1095)
+
+[node name="Arrow5" parent="Races/IntroRace/Arrows" instance=ExtResource("9_x6rqc")]
+transform = Transform3D(-0.652453, 7.65354, -2.23556, 2.14424, 2.32882, 7.34703, 7.67962, 5.94819e-07, -2.24131, -143.27, 436.825, -24.2676)
+
+[node name="Arrow6" parent="Races/IntroRace/Arrows" instance=ExtResource("9_x6rqc")]
+transform = Transform3D(1.64327, 5.74015, -0.591904, -5.40049, 1.74662, 1.94525, 2.03331, 5.96046e-08, 5.64497, -142.228, 443.485, 41.5613)
+
+[node name="Arrow7" parent="Races/IntroRace/Arrows" instance=ExtResource("9_x6rqc")]
+transform = Transform3D(-0.553024, 5.74015, -1.65676, 1.81748, 1.74662, 5.44482, 5.6913, -1.07288e-06, -1.89976, -85.1404, 251.353, 97.9192)
+
+[node name="Arrow8" parent="Races/IntroRace/Arrows" instance=ExtResource("9_x6rqc")]
+transform = Transform3D(2.07239, 7.65353, -1.06237, -6.81078, 2.32882, 3.4914, 3.64945, -1.19209e-07, 7.11909, -97.0512, 283.359, 173.635)
+
+[node name="Arrow9" parent="Races/IntroRace/Arrows" instance=ExtResource("9_x6rqc")]
+transform = Transform3D(1.35956, 7.65353, 1.89077, -4.46811, 2.32882, -6.21391, -6.4952, 0, 4.67037, -35.8343, 83.2814, 234.677)
 
 [connection signal="finished" from="MainMusicPlayer" to="." method="_on_main_music_player_finished"]
 [connection signal="body_entered" from="Races/IntroRace/IntroRaceCheckpoints/EnterIntroRaceArea" to="." method="_on_enter_intro_race_area_body_entered"]
