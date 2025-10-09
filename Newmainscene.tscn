@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=4 uid="uid://bvn1fp4ootpmv"]
+[gd_scene load_steps=39 format=4 uid="uid://bvn1fp4ootpmv"]
 
 [ext_resource type="Script" uid="uid://dv32gl7pg6dpo" path="res://mainscene.gd" id="1_kx2fw"]
 [ext_resource type="PackedScene" uid="uid://d1d0adnny67ho" path="res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn" id="2_15qjk"]
@@ -8,6 +8,7 @@
 [ext_resource type="Material" uid="uid://kr5tlx4sqgtp" path="res://night_sky.tres" id="5_iq26o"]
 [ext_resource type="PackedScene" uid="uid://bq62kd05pfgpr" path="res://WorldCollisions.tscn" id="6_ldy72"]
 [ext_resource type="Script" uid="uid://bs8760v28w752" path="res://intro_race_follow.gd" id="7_15qjk"]
+[ext_resource type="PackedScene" uid="uid://b7evx6068aunm" path="res://Advanced Vehicle Controller/Scenes/arrow (1).glb" id="9_x6rqc"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f5kpv"]
 resource_name = "wall"
@@ -186,12 +187,12 @@ adjustment_enabled = true
 
 [sub_resource type="Curve3D" id="Curve3D_u514n"]
 closed = true
-bake_interval = 97.41
+bake_interval = 0.01
 _data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -42.355, 137.48, 3.0043, 0, 0, 0, 0, 0, 0, -42.3143, 138.657, -111.194, 0, 0, 0, 0, 0, 0, -23.1935, 76.2241, -31.5971, 0, 0, 0, 0, 0, 0, -8.80702, 28.9435, -12.0473, 0, 0, 0, 0, 0, 0, -16.2441, 53.3851, 98.849, 0, 0, 0, 0, 0, 0, -30.8038, 101.235, 227.207, 0, 0, 0, 0, 0, 0, -61.1857, 201.083, 191.997, 0, 0, 0, 0, 0, 0, -84.3714, 277.281, 166.573, 0, 0, 0, 0, 0, 0, -80.3165, 263.955, 104.463, 0, 0, 0, 0, 0, 0, -133.395, 438.394, 37.6123, 0, 0, 0, 0, 0, 0, -128.886, 423.576, -21.0135, 0, 0, 0, 0, 0, 0, -101.449, 333.406, 9.85017, 0, 0, 0, 0, 0, 0, -94.8184, 311.615, -43.8192, 0, 0, 0, 0, 0, 0, -48.7783, 161.483, 8.54108),
-"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -38.1392, 124.957, -76.8813, 0, 0, 0, 0, 0, 0, -23.1935, 76.2241, -31.5971, 0, 0, 0, 0, 0, 0, -5.96271, 19.5959, -12.0473, 0, 0, 0, 0, 0, 0, -28.9819, 95.2477, 214.124, 0, 0, 0, 0, 0, 0, -34.9482, 114.855, 214.708, 0, 0, 0, 0, 0, 0, -61.1857, 201.083, 191.997, 0, 0, 0, 0, 0, 0, -84.3714, 277.281, 166.573, 0, 0, 0, 0, 0, 0, -77.9103, 256.047, 104.374, 0, 0, 0, 0, 0, 0, -82.8286, 272.211, 96.9776, 0, 0, 0, 0, 0, 0, -130.045, 427.385, 46.256, 0, 0, 0, 0, 0, 0, -134.565, 442.24, 28.9461, 0, 0, 0, 0, 0, 0, -130.047, 427.392, -10.7982, 0, 0, 0, 0, 0, 0, -126.015, 414.14, -21.9506, 0, 0, 0, 0, 0, 0, -103.022, 338.574, 3.75867, 0, 0, 0, 0, 0, 0, -99.0802, 325.563, -7.68308, 0, 0, 0, 0, 0, 0, -96.2527, 316.107, -39.2572, 0, 0, 0, 0, 0, 0, -94.2351, 309.461, -41.1645, 0, 0, 0, 0, 0, 0, -44.6615, 145.567, 15.0874, 0, 0, 0, 0, 0, 0, -43.9644, 145.495, -54.9261),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 }
-point_count = 14
+point_count = 19
 
 [sub_resource type="SphereMesh" id="SphereMesh_x6rqc"]
 
@@ -224,6 +225,9 @@ size = Vector3(8.39722, 0.653198, 38.6354)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_lqtqk"]
 size = Vector3(5.52026, 46.6943, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_u514n"]
+size = Vector3(7.0788, 50.6925, 1)
 
 [node name="MainScene" type="Node3D"]
 script = ExtResource("1_kx2fw")
@@ -361,10 +365,10 @@ transform = Transform3D(0.291103, -0.956692, 0, 0.956692, 0.291103, 0, 0, 0, 1, 
 curve = SubResource("Curve3D_u514n")
 
 [node name="IntroRaceFollow" type="PathFollow3D" parent="Races/IntroRace"]
-transform = Transform3D(0.843176, 0.504525, -0.185724, 0.502363, -0.616337, 0.606423, 0.191487, -0.60463, -0.77314, -32.3514, 106.127, -69.6852)
-progress = 167.87
+transform = Transform3D(-0.907155, 0.317248, -0.276411, -0.138909, 0.394287, 0.908413, 0.397183, 0.862482, -0.313612, -11.6346, 38.2362, -18.4825)
+progress = 110.0
 script = ExtResource("7_15qjk")
-speed = -70.0
+speed = -80.0
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Races/IntroRace/IntroRaceFollow"]
 mesh = SubResource("SphereMesh_x6rqc")
@@ -452,6 +456,16 @@ shape = SubResource("BoxShape3D_v1ddw")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Races/IntroRace/IntroRaceCheckpoints/EighthCheckpoint"]
 transform = Transform3D(0.964298, -0.248322, -0.0920066, 0.258514, 0.807335, 0.530453, -0.0574433, -0.5353, 0.842706, -25.5647, 88.1506, 209.199)
 shape = SubResource("BoxShape3D_lqtqk")
+
+[node name="Finish" type="Area3D" parent="Races/IntroRace/IntroRaceCheckpoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.3012, 53.5729, 86.7305)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Races/IntroRace/IntroRaceCheckpoints/Finish"]
+transform = Transform3D(0.951755, -0.290102, -0.100021, 0.306801, 0.893208, 0.328714, -0.00602054, -0.343541, 0.939118, 5.11398, -5.90274, 2.75802)
+shape = SubResource("BoxShape3D_u514n")
+
+[node name="arrow (1)" parent="." instance=ExtResource("9_x6rqc")]
+transform = Transform3D(-0.291474, 28.3044, -9.93865, -29.9984, -0.308918, -8.15195e-09, -0.102341, 9.93813, 28.3059, 388.487, 116.871, -152.999)
 
 [connection signal="finished" from="MainMusicPlayer" to="." method="_on_main_music_player_finished"]
 [connection signal="body_entered" from="Races/IntroRace/IntroRaceCheckpoints/EnterIntroRaceArea" to="." method="_on_enter_intro_race_area_body_entered"]

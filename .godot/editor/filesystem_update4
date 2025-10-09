@@ -7,6 +7,3 @@ res://Advanced Vehicle Controller/Vehicle/AI_Vehicles/AI_Muscle_Car.tscn
 res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn
 res://Advanced Vehicle Controller/Vehicle/AI_Vehicles/AI_NightSky.tscn
 res://pause_menu.tscn
-res://mainscene.gd
-res://pause_menu.gd
-res://Advanced Vehicle Controller/Scenes/title_screen.gd

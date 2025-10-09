@@ -1,3 +1,5 @@
+CollisionShape3D
+Area3D
 ColorRect
 AnimationPlayer
 Button
@@ -8,8 +10,5 @@ Node3D
 Marker3D
 PathFollow3D
 NavigationRegion3D
-CollisionShape3D
-Area3D
 Path3D
 CenterContainer
-Timer
