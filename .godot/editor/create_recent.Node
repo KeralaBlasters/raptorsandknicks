@@ -1,4 +1,5 @@
 Node3D
+Marker3D
 CollisionShape3D
 Area3D
 ColorRect
@@ -7,7 +8,6 @@ Button
 VBoxContainer
 PanelContainer
 MeshInstance3D
-Marker3D
 PathFollow3D
 NavigationRegion3D
 Path3D

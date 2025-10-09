@@ -109,6 +109,15 @@ var energy : float # Variable in which we store vehicle energy or fuel and expor
 var camera_scene : = preload("res://Advanced Vehicle Controller/Scenes/cam_holder.tscn").instantiate() # We Instantiate our vehicle main camera and add it to our vehicle as a child node
 var minimap : = preload("res://Advanced Vehicle Controller/Scenes/MinimapCamera.tscn").instantiate() # We Instantiate our Minimap Scene and add it to our vehicle as a child node, this will create camera above our car and add necessary markers to id also adds smal display for our minimap
 
+
+
+
+
+
+
+
+
+
 # Everything that needs to be set when our car is initiated
 func _ready() -> void:
 	

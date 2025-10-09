@@ -6,13 +6,17 @@ extends Node3D
 var can_start_intro_race = false
 @onready var intro_race_follow: PathFollow3D = $Races/IntroRace/IntroRaceFollow
 
+var can_start_second_race = false
 
 var last_index: int = -1
 
 var ai_intro_racer = preload("res://Advanced Vehicle Controller/Vehicle/AI_Vehicles/AI_Muscle_Car.tscn")
 
+var intro_checkpoint_number = 0
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	var player = $"Muscle Car"
 	show_intro()
 	Ui.show()
 	randomize()
@@ -31,7 +35,15 @@ func _process(delta: float) -> void:
 		pass
 		
 	
+	if can_start_second_race and Input.is_action_just_pressed("Enter Race"):
+		start_second_race()
+		can_start_second_race = false
+	else:
+		pass
+		
 	
+	if intro_checkpoint_number == 9:
+		finish_intro_race()
 	
 
 
@@ -95,16 +107,21 @@ func _on_enter_race_area_body_exited(body: Node3D) -> void:
 
 
 func start_intro_race():
+	var player_intro_spawn = $Races/IntroRace/PlayerIntroSpawn
+	var player = $"Muscle Car"
+	player.global_position = player_intro_spawn.global_position
+	player.global_rotation = player_intro_spawn.global_rotation
 	var intro_race_path = $Races/IntroRace/IntroRaceFollow
 	var intro_ai_spawn = $Races/IntroRace/Spawn
 	var intro_car = ai_intro_racer.instantiate() 
 	var path = intro_race_path.get_parent() as Path3D
-	add_child(intro_car)
+	var spawned_ai_intro_car = intro_car
 	intro_race_follow.target_veh = intro_car
 	intro_car.target_ray = intro_race_path
 	intro_car.global_transform.origin = intro_ai_spawn.global_transform.origin
 	
-	
+	$Races/IntroRace/Arrows.show()
+	$Races/IntroRace/start_arrow.hide()
 	
 	
 	text.text = "3"
@@ -118,6 +135,7 @@ func start_intro_race():
 	text.text = ""
 	intro_race_follow.active = true
 	intro_car.active = true
+	
 
 
 
@@ -140,3 +158,93 @@ func _on_enter_intro_race_area_body_exited(body: Node3D) -> void:
 	else:
 		pass
 		
+
+
+
+func _on_first_checkpoint_body_entered(body: Node3D) -> void:
+	if body.name == "Muscle Car":
+		intro_checkpoint_number += 1
+
+
+func _on_second_checkpoint_body_entered(body: Node3D) -> void:
+	if body.name == "Muscle Car":
+		intro_checkpoint_number += 1
+		
+
+
+
+
+func _on_third_checkpoint_body_entered(body: Node3D) -> void:
+	if body.name == "Muscle Car":
+		intro_checkpoint_number += 1
+
+
+
+
+func _on_fourth_checkpoint_body_entered(body: Node3D) -> void:
+	if body.name == "Muscle Car":
+		intro_checkpoint_number += 1
+
+
+
+
+func _on_fifth_checkpoint_body_entered(body: Node3D) -> void:
+	if body.name == "Muscle Car":
+		intro_checkpoint_number += 1
+		
+
+
+
+
+func _on_sixth_checkpoint_body_entered(body: Node3D) -> void:
+	if body.name == "Muscle Car":
+		intro_checkpoint_number += 1
+		
+
+
+
+func _on_seventh_checkpoint_body_entered(body: Node3D) -> void:
+	if body.name == "Muscle Car":
+		intro_checkpoint_number += 1
+
+
+
+
+func _on_eighth_checkpoint_body_entered(body: Node3D) -> void:
+	if body.name == "Muscle Car":
+		intro_checkpoint_number += 1
+		
+
+
+func _on_finish_body_entered(body: Node3D) -> void:
+	if body.name == "Muscle Car":
+		intro_checkpoint_number += 1
+
+
+func finish_intro_race():
+	$Races/IntroRace.queue_free()
+	text.text = "FINISH"
+	await get_tree().create_timer(3.0).timeout
+	text.text = ""
+
+
+
+
+func _on_enter_second_race_area_body_entered(body: Node3D) -> void:
+	if body.name == "Muscle Car":
+		text.text = "PRESS ENTER TO START THE SECOND RACE"
+		can_start_second_race = true
+	else:
+		pass
+
+
+
+func _on_enter_second_race_area_body_exited(body: Node3D) -> void:
+	if body.name == "Muscle Car":
+		text.text = ""
+		can_start_second_race = false
+	else:
+		pass
+
+func start_second_race():
+	pass

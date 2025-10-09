@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=4 uid="uid://bvn1fp4ootpmv"]
+[gd_scene load_steps=41 format=4 uid="uid://bvn1fp4ootpmv"]
 
 [ext_resource type="Script" uid="uid://dv32gl7pg6dpo" path="res://mainscene.gd" id="1_kx2fw"]
 [ext_resource type="PackedScene" uid="uid://d1d0adnny67ho" path="res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn" id="2_15qjk"]
@@ -10,6 +10,7 @@
 [ext_resource type="Script" uid="uid://bs8760v28w752" path="res://intro_race_follow.gd" id="7_15qjk"]
 [ext_resource type="PackedScene" uid="uid://boelh3seo03yc" path="res://start_arrow.tscn" id="8_iq26o"]
 [ext_resource type="PackedScene" uid="uid://muiau6h8mera" path="res://Advanced Vehicle Controller/Scenes/arrow.glb" id="9_x6rqc"]
+[ext_resource type="Script" uid="uid://35ee0pcov6np" path="res://second_race_follow.gd" id="11_ldy72"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f5kpv"]
 resource_name = "wall"
@@ -190,10 +191,10 @@ adjustment_enabled = true
 closed = true
 bake_interval = 0.01
 _data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -38.1392, 124.957, -76.8813, 0, 0, 0, 0, 0, 0, -23.1935, 76.2241, -31.5971, 0, 0, 0, 0, 0, 0, -5.96271, 19.5959, -12.0473, 0, 0, 0, 0, 0, 0, -28.9819, 95.2477, 214.124, 0, 0, 0, 0, 0, 0, -34.9482, 114.855, 214.708, 0, 0, 0, 0, 0, 0, -61.1857, 201.083, 191.997, 0, 0, 0, 0, 0, 0, -84.3714, 277.281, 166.573, 0, 0, 0, 0, 0, 0, -77.9103, 256.047, 104.374, 0, 0, 0, 0, 0, 0, -82.8286, 272.211, 96.9776, 0, 0, 0, 0, 0, 0, -130.045, 427.385, 46.256, 0, 0, 0, 0, 0, 0, -134.565, 442.24, 28.9461, 0, 0, 0, 0, 0, 0, -130.047, 427.392, -10.7982, 0, 0, 0, 0, 0, 0, -126.015, 414.14, -21.9506, 0, 0, 0, 0, 0, 0, -103.022, 338.574, 3.75867, 0, 0, 0, 0, 0, 0, -99.0802, 325.563, -7.68308, 0, 0, 0, 0, 0, 0, -96.2527, 316.107, -39.2572, 0, 0, 0, 0, 0, 0, -94.2351, 309.461, -41.1645, 0, 0, 0, 0, 0, 0, -44.6615, 145.567, 15.0874, 0, 0, 0, 0, 0, 0, -43.9644, 145.495, -54.9261),
-"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 40.7055, -134.161, 65.0379, 0, 0, 0, 0, 0, 0, 19.841, -65.2061, 3.36426, 0, 0, 0, 0, 0, 0, -3.4613, 11.3751, -12.0473, 0, 0, 0, 0, 0, 0, -11.9041, 39.1226, 87.9298, 0, 0, 0, 0, 0, 0, 17.6266, -57.9289, 119.289, 0, 0, 0, 0, 0, 0, 8.3776, -22.2356, 225.548, 0, 0, 0, 0, 0, 0, -15.3618, 50.4853, 188.31, 0, 0, 0, 0, 0, 0, -31.2734, 102.778, 298.566, 0, 0, 0, 0, 0, 0, -19.0823, 62.7127, 351.809, 0, 0, 0, 0, 0, 0, 8.02564, -26.3756, 382.438, 0, 0, 0, 0, 0, 0, 27.9481, -91.8493, 351.816, 0, 0, 0, 0, 0, 0, 60.1543, -197.693, 305.31, 0, 0, 0, 0, 0, 0, 66.902, -219.87, 231.574, 0, 0, 0, 0, 0, 0, 72.3253, -237.694, 176.45, 0, 0, 0, 0, 0, 0, 78.3537, -257.563, 117.158, 0, 0, 0, 0, 0, 0, 108.143, -355.626, 150.605, 0, 0, 0, 0, 0, 0, 96.1531, -316.238, 262.595, 0, 0, 0, 0, 0, 0, 121.211, -399.562, 294.196, 0, 0, 0, 0, 0, 0, 139.042, -454.287, 115.042, 0, 0, 0, 0, 0, 0, 56.1045, -185.937, 31.2283, 0, 0, 0, 0, 0, 0, 50.6047, -167.949, 77.9834),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 }
-point_count = 19
+point_count = 21
 
 [sub_resource type="SphereMesh" id="SphereMesh_x6rqc"]
 
@@ -307,7 +308,7 @@ shape = SubResource("ConcavePolygonShape3D_xtb1e")
 shape = SubResource("ConcavePolygonShape3D_sbvtr")
 
 [node name="Muscle Car" parent="." instance=ExtResource("2_15qjk")]
-transform = Transform3D(-0.0890852, 0, 0.996023, 0, 1, 0, -0.996023, 0, -0.0890852, 471.337, 2.16761, -7.14177)
+transform = Transform3D(-0.0890852, 0, 0.996023, 0, 1, 0, -0.996023, 0, -0.0890852, 440.63, 2.16761, -90.9917)
 is_current_veh = true
 use_energy = false
 
@@ -363,18 +364,23 @@ shadow_enabled = true
 
 [node name="IntroRace" type="Path3D" parent="Races"]
 transform = Transform3D(0.291103, -0.956692, 0, 0.956692, 0.291103, 0, 0, 0, 1, 472.255, 0.41621, -116.021)
+visible = false
 curve = SubResource("Curve3D_u514n")
+
+[node name="PlayerIntroSpawn" type="Marker3D" parent="Races/IntroRace"]
+transform = Transform3D(-0.0469188, 0.990741, -0.127399, 0.17756, 0.13378, 0.974975, 0.982991, 0.0231237, -0.182193, -11.3809, 37.4029, -9.68932)
 
 [node name="start_arrow" parent="Races/IntroRace" instance=ExtResource("8_iq26o")]
 transform = Transform3D(4.07219, 14.3504, -1.57607, -13.383, 4.36654, 5.17964, 5.41412, 3.86408e-07, 13.9888, -0.248505, 10.5537, -3.27281)
 
 [node name="IntroRaceFollow" type="PathFollow3D" parent="Races/IntroRace"]
-transform = Transform3D(-0.907191, 0.317146, -0.276411, -0.138953, 0.394272, 0.908413, 0.397086, 0.862527, -0.313612, -11.6346, 38.2365, -18.4826)
+transform = Transform3D(0.89038, 0.354236, 0.285848, 0.187451, 0.286904, -0.93942, -0.414793, 0.890045, 0.189053, 15.5061, -50.96, 0.497317)
 progress = 110.0
 script = ExtResource("7_15qjk")
 speed = -80.0
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Races/IntroRace/IntroRaceFollow"]
+visible = false
 mesh = SubResource("SphereMesh_x6rqc")
 
 [node name="Spawn" type="Marker3D" parent="Races/IntroRace"]
@@ -497,6 +503,127 @@ transform = Transform3D(2.07239, 7.65353, -1.06237, -6.81078, 2.32882, 3.4914, 3
 [node name="Arrow9" parent="Races/IntroRace/Arrows" instance=ExtResource("9_x6rqc")]
 transform = Transform3D(1.35956, 7.65353, 1.89077, -4.46811, 2.32882, -6.21391, -6.4952, 0, 4.67037, -35.8343, 83.2814, 234.677)
 
+[node name="SecondRace" type="Path3D" parent="Races"]
+transform = Transform3D(0.291103, -0.956692, 0, 0.956692, 0.291103, 0, 0, 0, 1, -127.275, 0.41621, -278.89)
+curve = SubResource("Curve3D_u514n")
+
+[node name="PlayerSecondSpawn" type="Marker3D" parent="Races/SecondRace"]
+transform = Transform3D(-0.0469188, 0.990741, -0.127399, 0.17756, 0.13378, 0.974975, 0.982991, 0.0231237, -0.182193, -11.3809, 37.4029, -9.68932)
+
+[node name="second_start_arrow" parent="Races/SecondRace" instance=ExtResource("8_iq26o")]
+transform = Transform3D(4.07219, 14.3504, -1.57607, -13.383, 4.36654, 5.17964, 5.41412, 3.86408e-07, 13.9888, -0.248505, 10.5537, -3.27281)
+
+[node name="SecondRaceFollow" type="PathFollow3D" parent="Races/SecondRace"]
+transform = Transform3D(0.89038, 0.354236, 0.285848, 0.187451, 0.286904, -0.93942, -0.414793, 0.890045, 0.189053, 15.5061, -50.96, 0.497317)
+progress = 110.0
+script = ExtResource("11_ldy72")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Races/SecondRace/SecondRaceFollow"]
+visible = false
+mesh = SubResource("SphereMesh_x6rqc")
+
+[node name="SecondSpawn" type="Marker3D" parent="Races/SecondRace"]
+transform = Transform3D(-0.153194, 0.94791, -0.279283, 0.247391, 0.310408, 0.917848, 0.956729, 0.0715169, -0.282057, -9.59839, 34.4266, -24.692)
+
+[node name="SecondStartGrid" type="Node3D" parent="Races/SecondRace"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.10303, 29.7035, -12.2488)
+
+[node name="SecondSpawnpoint1" type="Node3D" parent="Races/SecondRace/SecondStartGrid"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="SecondSpawnpoint2" type="Node3D" parent="Races/SecondRace/SecondStartGrid"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+
+[node name="SecondSpawnpoint3" type="Node3D" parent="Races/SecondRace/SecondStartGrid"]
+
+[node name="SecondRaceCheckpoints" type="Node3D" parent="Races/SecondRace"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.372421, -0.113312, 0)
+
+[node name="EnterSecondRaceArea" type="Area3D" parent="Races/SecondRace/SecondRaceCheckpoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.44334, 8.02991, -2.73145)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Races/SecondRace/SecondRaceCheckpoints/EnterSecondRaceArea"]
+transform = Transform3D(9.36808, -3.3793, -0.905209, 3.49266, 8.88545, 2.97491, -0.200994, -3.10308, 9.50424, 0.196396, 1.97885, -3.92023)
+shape = SubResource("BoxShape3D_iq26o")
+
+[node name="SecondStart" type="Area3D" parent="Races/SecondRace/SecondRaceCheckpoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.87161, 22.5831, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Races/SecondRace/SecondRaceCheckpoints/SecondStart"]
+transform = Transform3D(0.959756, -0.265536, -0.0914259, 0.280744, 0.915466, 0.288278, 0.00714914, -0.302344, 0.953172, -4.41304, 16.2522, -17.4327)
+shape = SubResource("BoxShape3D_ldy72")
+
+[node name="SecondFirstCheckpoint" type="Area3D" parent="Races/SecondRace/SecondRaceCheckpoints"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Races/SecondRace/SecondRaceCheckpoints/SecondFirstCheckpoint"]
+transform = Transform3D(0.950119, -0.287992, -0.119732, 0.311822, 0.869136, 0.383889, -0.0064941, -0.402075, 0.915584, -42.4429, 140.338, -36.7582)
+shape = SubResource("BoxShape3D_5vw37")
+
+[node name="SecondSecondCheckpoint" type="Area3D" parent="Races/SecondRace/SecondRaceCheckpoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.854, 176.988, 2.93573)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Races/SecondRace/SecondRaceCheckpoints/SecondSecondCheckpoint"]
+transform = Transform3D(0.94936, -0.27441, -0.15302, 0.314179, 0.824934, 0.469868, -0.00270536, -0.494149, 0.869373, -0.700836, 0.674042, 0.749939)
+shape = SubResource("BoxShape3D_hw70e")
+
+[node name="SecondThirdCheckpoint" type="Area3D" parent="Races/SecondRace/SecondRaceCheckpoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -95.5959, 314.17, -40.148)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Races/SecondRace/SecondRaceCheckpoints/SecondThirdCheckpoint"]
+transform = Transform3D(0.955568, 0.0489393, -0.290681, 0.289835, -0.335719, 0.896264, -0.0537245, -0.94069, -0.334987, -2.48205, 4.77777, 7.57416)
+shape = SubResource("BoxShape3D_qxlfs")
+
+[node name="SecondFourthCheckpoint" type="Area3D" parent="Races/SecondRace/SecondRaceCheckpoints"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Races/SecondRace/SecondRaceCheckpoints/SecondFourthCheckpoint"]
+transform = Transform3D(0.959911, -0.269684, 0.0764319, 0.280289, 0.926468, -0.251189, -0.0030702, 0.262542, 0.964916, -132.275, 435.613, 12.2889)
+shape = SubResource("BoxShape3D_6bdyx")
+
+[node name="SecondFifthCheckpoint" type="Area3D" parent="Races/SecondRace/SecondRaceCheckpoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -127.996, 420.652, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Races/SecondRace/SecondRaceCheckpoints/SecondFifthCheckpoint"]
+transform = Transform3D(0.949905, -0.291385, -0.113029, 0.311586, 0.854689, 0.415236, -0.0243888, -0.429653, 0.902665, -2.61157, 9.03202, 43.7183)
+shape = SubResource("BoxShape3D_irrh1")
+
+[node name="SecondSixthCheckpoint" type="Area3D" parent="Races/SecondRace/SecondRaceCheckpoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -79.1423, 260.096, 111.454)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Races/SecondRace/SecondRaceCheckpoints/SecondSixthCheckpoint"]
+transform = Transform3D(0.963715, -0.242794, -0.110926, 0.266728, 0.892165, 0.364551, 0.0104535, -0.380911, 0.924553, -1.03022, 3.23383, -0.734029)
+shape = SubResource("BoxShape3D_jji11")
+
+[node name="SecondSeventhCheckpoint" type="Area3D" parent="Races/SecondRace/SecondRaceCheckpoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -76.1301, 250.197, 176.383)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Races/SecondRace/SecondRaceCheckpoints/SecondSeventhCheckpoint"]
+transform = Transform3D(0.929986, -0.348205, -0.117811, 0.360351, 0.800261, 0.479301, -0.0726153, -0.488197, 0.869707, -2.23445, 7.31721, -1.94156)
+shape = SubResource("BoxShape3D_v1ddw")
+
+[node name="SecondEighthCheckpoint" type="Area3D" parent="Races/SecondRace/SecondRaceCheckpoints"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Races/SecondRace/SecondRaceCheckpoints/SecondEighthCheckpoint"]
+transform = Transform3D(0.964298, -0.248322, -0.0920066, 0.258514, 0.807335, 0.530453, -0.0574433, -0.5353, 0.842706, -25.5647, 88.1506, 209.199)
+shape = SubResource("BoxShape3D_lqtqk")
+
+[node name="SecondFinish" type="Area3D" parent="Races/SecondRace/SecondRaceCheckpoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.3012, 53.5729, 86.7305)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Races/SecondRace/SecondRaceCheckpoints/SecondFinish"]
+transform = Transform3D(0.951755, -0.290102, -0.100021, 0.306801, 0.893208, 0.328714, -0.00602054, -0.343541, 0.939118, 5.11398, -5.90274, 2.75802)
+shape = SubResource("BoxShape3D_u514n")
+
 [connection signal="finished" from="MainMusicPlayer" to="." method="_on_main_music_player_finished"]
 [connection signal="body_entered" from="Races/IntroRace/IntroRaceCheckpoints/EnterIntroRaceArea" to="." method="_on_enter_intro_race_area_body_entered"]
 [connection signal="body_exited" from="Races/IntroRace/IntroRaceCheckpoints/EnterIntroRaceArea" to="." method="_on_enter_intro_race_area_body_exited"]
+[connection signal="body_entered" from="Races/IntroRace/IntroRaceCheckpoints/FirstCheckpoint" to="." method="_on_first_checkpoint_body_entered"]
+[connection signal="body_entered" from="Races/IntroRace/IntroRaceCheckpoints/SecondCheckpoint" to="." method="_on_second_checkpoint_body_entered"]
+[connection signal="body_entered" from="Races/IntroRace/IntroRaceCheckpoints/ThirdCheckpoint" to="." method="_on_third_checkpoint_body_entered"]
+[connection signal="body_entered" from="Races/IntroRace/IntroRaceCheckpoints/FourthCheckpoint" to="." method="_on_fourth_checkpoint_body_entered"]
+[connection signal="body_entered" from="Races/IntroRace/IntroRaceCheckpoints/FifthCheckpoint" to="." method="_on_fifth_checkpoint_body_entered"]
+[connection signal="body_entered" from="Races/IntroRace/IntroRaceCheckpoints/SixthCheckpoint" to="." method="_on_sixth_checkpoint_body_entered"]
+[connection signal="body_entered" from="Races/IntroRace/IntroRaceCheckpoints/SeventhCheckpoint" to="." method="_on_seventh_checkpoint_body_entered"]
+[connection signal="body_entered" from="Races/IntroRace/IntroRaceCheckpoints/EighthCheckpoint" to="." method="_on_eighth_checkpoint_body_entered"]
+[connection signal="body_entered" from="Races/IntroRace/IntroRaceCheckpoints/Finish" to="." method="_on_finish_body_entered"]
+[connection signal="body_entered" from="Races/SecondRace/SecondRaceCheckpoints/EnterSecondRaceArea" to="." method="_on_enter_second_race_area_body_entered"]
+[connection signal="body_exited" from="Races/SecondRace/SecondRaceCheckpoints/EnterSecondRaceArea" to="." method="_on_enter_second_race_area_body_exited"]
