@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=4 uid="uid://bvn1fp4ootpmv"]
+[gd_scene load_steps=42 format=4 uid="uid://bvn1fp4ootpmv"]
 
 [ext_resource type="Script" uid="uid://dv32gl7pg6dpo" path="res://mainscene.gd" id="1_kx2fw"]
 [ext_resource type="PackedScene" uid="uid://d1d0adnny67ho" path="res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn" id="2_15qjk"]
@@ -191,10 +191,10 @@ adjustment_enabled = true
 closed = true
 bake_interval = 0.01
 _data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 40.7055, -134.161, 65.0379, 0, 0, 0, 0, 0, 0, 19.841, -65.2061, 3.36426, 0, 0, 0, 0, 0, 0, -3.4613, 11.3751, -12.0473, 0, 0, 0, 0, 0, 0, -11.9041, 39.1226, 87.9298, 0, 0, 0, 0, 0, 0, 17.6266, -57.9289, 119.289, 0, 0, 0, 0, 0, 0, 8.3776, -22.2356, 225.548, 0, 0, 0, 0, 0, 0, -15.3618, 50.4853, 188.31, 0, 0, 0, 0, 0, 0, -31.2734, 102.778, 298.566, 0, 0, 0, 0, 0, 0, -19.0823, 62.7127, 351.809, 0, 0, 0, 0, 0, 0, 8.02564, -26.3756, 382.438, 0, 0, 0, 0, 0, 0, 27.9481, -91.8493, 351.816, 0, 0, 0, 0, 0, 0, 60.1543, -197.693, 305.31, 0, 0, 0, 0, 0, 0, 66.902, -219.87, 231.574, 0, 0, 0, 0, 0, 0, 72.3253, -237.694, 176.45, 0, 0, 0, 0, 0, 0, 78.3537, -257.563, 117.158, 0, 0, 0, 0, 0, 0, 108.143, -355.626, 150.605, 0, 0, 0, 0, 0, 0, 96.1531, -316.238, 262.595, 0, 0, 0, 0, 0, 0, 121.211, -399.562, 294.196, 0, 0, 0, 0, 0, 0, 139.042, -454.287, 115.042, 0, 0, 0, 0, 0, 0, 56.1045, -185.937, 31.2283, 0, 0, 0, 0, 0, 0, 50.6047, -167.949, 77.9834),
-"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -39.9433, 131.272, -67.3898, 0, 0, 0, 0, 0, 0, 3.03928, -9.98856, -0.578224, 0, 0, 0, 0, 0, 0, -31.9231, 104.913, 240.434, 0, 0, 0, 0, 0, 0, -88.0046, 287.716, 172.552, 0, 0, 0, 0, 0, 0, -80.3707, 264.075, 103.886, 0, 0, 0, 0, 0, 0, -102.774, 337.638, 91.354, 0, 0, 0, 0, 0, 0, -119.299, 391.898, 61.7289, 0, 0, 0, 0, 0, 0, -136.113, 447.106, 44.7293, 0, 0, 0, 0, 0, 0, -130.949, 430.119, -20.7669, 0, 0, 0, 0, 0, 0, -101.35, 331.871, 14.2279, 0, 0, 0, 0, 0, 0, -97.5105, 319.071, -19.79, 0, 0, 0, 0, 0, 0, -96.7925, 316.595, -44.0418, 0, 0, 0, 0, 0, 0, -94.6961, 309.66, -51.1979, 0, 0, 0, 0, 0, 0, -64.9961, 212, -24.0446, 0, 0, 0, 0, 0, 0, -52.8329, 172.33, 13.6069, 0, 0, 0, 0, 0, 0, -45.164, 147.254, 15.815),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 }
-point_count = 21
+point_count = 16
 
 [sub_resource type="SphereMesh" id="SphereMesh_x6rqc"]
 
@@ -230,6 +230,15 @@ size = Vector3(5.52026, 46.6943, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_u514n"]
 size = Vector3(7.0788, 50.6925, 1)
+
+[sub_resource type="Curve3D" id="Curve3D_ldy72"]
+closed = true
+bake_interval = 0.01
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 40.7055, -134.161, 65.0379, 0, 0, 0, 0, 0, 0, 19.841, -65.2061, 3.36426, 0, 0, 0, 0, 0, 0, -3.4613, 11.3751, -12.0473, 0, 0, 0, 0, 0, 0, -11.9041, 39.1226, 87.9298, 0, 0, 0, 0, 0, 0, 17.6266, -57.9289, 119.289, 0, 0, 0, 0, 0, 0, 8.3776, -22.2356, 225.548, 0, 0, 0, 0, 0, 0, -15.3618, 50.4853, 188.31, 0, 0, 0, 0, 0, 0, -31.2734, 102.778, 298.566, 0, 0, 0, 0, 0, 0, -19.0823, 62.7127, 351.809, 0, 0, 0, 0, 0, 0, 8.02564, -26.3756, 382.438, 0, 0, 0, 0, 0, 0, 27.9481, -91.8493, 351.816, 0, 0, 0, 0, 0, 0, 60.1543, -197.693, 305.31, 0, 0, 0, 0, 0, 0, 66.902, -219.87, 231.574, 0, 0, 0, 0, 0, 0, 72.3253, -237.694, 176.45, 0, 0, 0, 0, 0, 0, 78.3537, -257.563, 117.158, 0, 0, 0, 0, 0, 0, 108.143, -355.626, 150.605, 0, 0, 0, 0, 0, 0, 96.1531, -316.238, 262.595, 0, 0, 0, 0, 0, 0, 121.211, -399.562, 294.196, 0, 0, 0, 0, 0, 0, 139.042, -454.287, 115.042, 0, 0, 0, 0, 0, 0, 56.1045, -185.937, 31.2283, 0, 0, 0, 0, 0, 0, 50.6047, -167.949, 77.9834),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+}
+point_count = 21
 
 [node name="MainScene" type="Node3D"]
 script = ExtResource("1_kx2fw")
@@ -364,7 +373,6 @@ shadow_enabled = true
 
 [node name="IntroRace" type="Path3D" parent="Races"]
 transform = Transform3D(0.291103, -0.956692, 0, 0.956692, 0.291103, 0, 0, 0, 1, 472.255, 0.41621, -116.021)
-visible = false
 curve = SubResource("Curve3D_u514n")
 
 [node name="PlayerIntroSpawn" type="Marker3D" parent="Races/IntroRace"]
@@ -374,13 +382,12 @@ transform = Transform3D(-0.0469188, 0.990741, -0.127399, 0.17756, 0.13378, 0.974
 transform = Transform3D(4.07219, 14.3504, -1.57607, -13.383, 4.36654, 5.17964, 5.41412, 3.86408e-07, 13.9888, -0.248505, 10.5537, -3.27281)
 
 [node name="IntroRaceFollow" type="PathFollow3D" parent="Races/IntroRace"]
-transform = Transform3D(0.89038, 0.354236, 0.285848, 0.187451, 0.286904, -0.93942, -0.414793, 0.890045, 0.189053, 15.5061, -50.96, 0.497317)
+transform = Transform3D(-0.840966, 0.471589, -0.265207, 9.23851e-06, 0.490178, 0.871592, 0.541047, 0.732997, -0.412234, -10.7697, 35.3942, -22.0428)
 progress = 110.0
 script = ExtResource("7_15qjk")
-speed = -80.0
+speed = -60.0
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Races/IntroRace/IntroRaceFollow"]
-visible = false
 mesh = SubResource("SphereMesh_x6rqc")
 
 [node name="Spawn" type="Marker3D" parent="Races/IntroRace"]
@@ -505,7 +512,8 @@ transform = Transform3D(1.35956, 7.65353, 1.89077, -4.46811, 2.32882, -6.21391, 
 
 [node name="SecondRace" type="Path3D" parent="Races"]
 transform = Transform3D(0.291103, -0.956692, 0, 0.956692, 0.291103, 0, 0, 0, 1, -127.275, 0.41621, -278.89)
-curve = SubResource("Curve3D_u514n")
+visible = false
+curve = SubResource("Curve3D_ldy72")
 
 [node name="PlayerSecondSpawn" type="Marker3D" parent="Races/SecondRace"]
 transform = Transform3D(-0.0469188, 0.990741, -0.127399, 0.17756, 0.13378, 0.974975, 0.982991, 0.0231237, -0.182193, -11.3809, 37.4029, -9.68932)
@@ -514,7 +522,8 @@ transform = Transform3D(-0.0469188, 0.990741, -0.127399, 0.17756, 0.13378, 0.974
 transform = Transform3D(4.07219, 14.3504, -1.57607, -13.383, 4.36654, 5.17964, 5.41412, 3.86408e-07, 13.9888, -0.248505, 10.5537, -3.27281)
 
 [node name="SecondRaceFollow" type="PathFollow3D" parent="Races/SecondRace"]
-transform = Transform3D(0.89038, 0.354236, 0.285848, 0.187451, 0.286904, -0.93942, -0.414793, 0.890045, 0.189053, 15.5061, -50.96, 0.497317)
+transform = Transform3D(0.890371, 0.354255, 0.285849, 0.187445, 0.286908, -0.939419, -0.414813, 0.890036, 0.189053, 15.5061, -50.9598, 0.497268)
+visible = false
 progress = 110.0
 script = ExtResource("11_ldy72")
 
@@ -612,6 +621,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.3012, 53.5729, 86.7305)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Races/SecondRace/SecondRaceCheckpoints/SecondFinish"]
 transform = Transform3D(0.951755, -0.290102, -0.100021, 0.306801, 0.893208, 0.328714, -0.00602054, -0.343541, 0.939118, 5.11398, -5.90274, 2.75802)
 shape = SubResource("BoxShape3D_u514n")
+
+[node name="Delete" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -64.6714, 0)
 
 [connection signal="finished" from="MainMusicPlayer" to="." method="_on_main_music_player_finished"]
 [connection signal="body_entered" from="Races/IntroRace/IntroRaceCheckpoints/EnterIntroRaceArea" to="." method="_on_enter_intro_race_area_body_entered"]

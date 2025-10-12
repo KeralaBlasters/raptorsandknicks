@@ -8,6 +8,8 @@ var can_start_intro_race = false
 
 var can_start_second_race = false
 
+
+
 var last_index: int = -1
 
 var ai_intro_racer = preload("res://Advanced Vehicle Controller/Vehicle/AI_Vehicles/AI_Muscle_Car.tscn")
@@ -114,6 +116,7 @@ func start_intro_race():
 	var intro_race_path = $Races/IntroRace/IntroRaceFollow
 	var intro_ai_spawn = $Races/IntroRace/Spawn
 	var intro_car = ai_intro_racer.instantiate() 
+	$Races/IntroRace.add_child(intro_car)
 	var path = intro_race_path.get_parent() as Path3D
 	var spawned_ai_intro_car = intro_car
 	intro_race_follow.target_veh = intro_car
@@ -222,10 +225,12 @@ func _on_finish_body_entered(body: Node3D) -> void:
 
 
 func finish_intro_race():
-	$Races/IntroRace.queue_free()
+	#$Races/IntroRace.queue_free()
 	text.text = "FINISH"
 	await get_tree().create_timer(3.0).timeout
 	text.text = ""
+	var delete = $Delete
+	ai_intro_racer.global_position = delete.global_position
 
 
 

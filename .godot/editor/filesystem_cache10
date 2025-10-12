@@ -1,25 +1,26 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1759979842
+::res://::1760058046
 AVC.png::CompressedTexture2D/CompressedTexture2D::4943202580687998810::1753660259::1753660444::1::::<><><>0<>0<>b9ff3f6863fbc28975ed11ae84075049<>res://.godot/imported/AVC.png-08600bcd2c7878b53ca1034a710556a8.ctex::
 blowbrush.otf::FontFile/FontFile::7104638019677059842::1756355836::1756356126::1::::<><><>0<>0<>fce321a6beee66502a4b259736892005<>res://.godot/imported/blowbrush.otf-f4cc59fc9e49d671f38f3daa8f2d9a11.fontdata::
 day_sky.tres::ShaderMaterial/ShaderMaterial::-1::1758071387::0::1::::<><><>0<>0<><>::
 default_bus_layout.tres::AudioBusLayout/AudioBusLayout::9107317078151757314::1756090165::0::1::::<><><>0<>0<><>::
 export_presets.cfg::TextFile/TextFile::-1::1756353013::0::1::::<><><>0<>0<><>::
 intro_race_follow.gd::GDScript/GDScript::3719943985237639799::1758071307::0::1::::<>PathFollow3D<><>0<>0<><>::
-mainscene.gd::GDScript::8692681046041145552::1759979175::0::1::::<>Node3D<><>0<>0<><>::
+mainscene.gd::GDScript/GDScript::8692681046041145552::1759985430::0::1::::<>Node3D<><>0<>0<><>::
 mainscene.tscn::PackedScene/PackedScene::7437203595061805793::1758162465::0::1::::<><><>0<>0<><>::uid://dv32gl7pg6dpo::::res://mainscene.gd<>uid://d1d0adnny67ho::::res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn<>uid://c8hsl52u1yako::::res://blowbrush.otf<>uid://bs8760v28w752::::res://intro_race_follow.gd
-Newmainscene.tscn::PackedScene::3888811714981160161::1759979212::0::1::::<><><>0<>0<><>::uid://dv32gl7pg6dpo::::res://mainscene.gd<>uid://d1d0adnny67ho::::res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn<>uid://c8hsl52u1yako::::res://blowbrush.otf<>uid://di4mprib5j61x::::res://pause_menu.tscn<>uid://bwcxhvcvv554n::::res://nightskysaturn.glb<>uid://kr5tlx4sqgtp::::res://night_sky.tres<>uid://bq62kd05pfgpr::::res://WorldCollisions.tscn<>uid://bs8760v28w752::::res://intro_race_follow.gd<>uid://boelh3seo03yc::::res://start_arrow.tscn<>uid://muiau6h8mera::::res://Advanced Vehicle Controller/Scenes/arrow.glb
+Newmainscene.tscn::PackedScene::3888811714981160161::1760056748::0::1::::<><><>0<>0<><>::uid://dv32gl7pg6dpo::::res://mainscene.gd<>uid://d1d0adnny67ho::::res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn<>uid://c8hsl52u1yako::::res://blowbrush.otf<>uid://di4mprib5j61x::::res://pause_menu.tscn<>uid://bwcxhvcvv554n::::res://nightskysaturn.glb<>uid://kr5tlx4sqgtp::::res://night_sky.tres<>uid://bq62kd05pfgpr::::res://WorldCollisions.tscn<>uid://bs8760v28w752::::res://intro_race_follow.gd<>uid://boelh3seo03yc::::res://start_arrow.tscn<>uid://muiau6h8mera::::res://Advanced Vehicle Controller/Scenes/arrow.glb<>uid://35ee0pcov6np::::res://second_race_follow.gd
 nightskysaturn.glb::PackedScene/PackedScene::3936114097692279615::1756090165::1756090678::1::::<><><>0<>0<>ab991327326d5a7b4d9559179af49c72<>res://.godot/imported/nightskysaturn.glb-d00034a840e4a3085b4ee38eb925c609.scn::
 nightskysaturn.tscn::PackedScene/PackedScene::-1::1758071387::0::1::::<><><>0<>0<><>::
-night_sky.tres::ShaderMaterial::738838912696197933::1759975646::0::1::::<><><>0<>0<><>::uid://bfgxbogpedbb4::::res://sky/stylized_sky.gdshader<>uid://dvuwb0yce4sb7::::res://sky/assets/shooting_star_sampler.png
+night_sky.tres::ShaderMaterial::738838912696197933::1760056561::0::1::::<><><>0<>0<><>::uid://bfgxbogpedbb4::::res://sky/stylized_sky.gdshader<>uid://dvuwb0yce4sb7::::res://sky/assets/shooting_star_sampler.png
 pause_menu.gd::GDScript/GDScript::1406875865970282423::1759806520::0::1::::<>Control<><>0<>0<><>::
-pause_menu.tscn::PackedScene::7781396051214370511::1759979176::0::1::::<><><>0<>0<><>::uid://ubrbmg2gvkqh::::res://pause_menu.gd<>uid://di2durhhdglob::::res://Models/pause_menu_shader.gdshader<>uid://c8hsl52u1yako::::res://blowbrush.otf<>uid://bpslylaiai81n::::res://Advanced Vehicle Controller/Textures/blowbrush.otf
-race_manager.gd::GDScript/GDScript::588122259251627167::1758071307::0::1::::<>Node<><>0<>0<><>::
+pause_menu.tscn::PackedScene::7781396051214370511::1760056697::0::1::::<><><>0<>0<><>::uid://ubrbmg2gvkqh::::res://pause_menu.gd<>uid://di2durhhdglob::::res://Models/pause_menu_shader.gdshader<>uid://c8hsl52u1yako::::res://blowbrush.otf<>uid://bpslylaiai81n::::res://Advanced Vehicle Controller/Textures/blowbrush.otf
+race_manager.gd::GDScript/GDScript::588122259251627167::1759981192::0::1::::<>Node<><>0<>0<><>::
 README.md::TextFile/TextFile::-1::1753660260::0::1::::<><><>0<>0<><>::
+second_race_follow.gd::GDScript/GDScript::2027470301999646541::1759984235::0::1::::<>PathFollow3D<><>0<>0<><>::
 shooting_star_sampler.png::CompressedTexture2D/CompressedTexture2D::7230899183008500562::1758071195::1758072083::1::::<><><>0<>0<>ff7e4052b76bbea0fc310566e2521215<>res://.godot/imported/shooting_star_sampler.png-ff1e808fa5f8310e548f777b9285bd3e.ctex::
 sky.tscn::PackedScene/PackedScene::-1::1758071668::0::1::::<><><>0<>0<><>::
 speedstate_manila_map_EXPORT.glb::PackedScene/PackedScene::1575494510261980206::1756243937::1756245067::1::::<><><>0<>0<>4bf2790539d53ee65f58dcffec3aafb0<>res://.godot/imported/speedstate_manila_map_EXPORT.glb-59047975cb4a652a73d4395b62830952.scn::
-start_arrow.tscn::PackedScene::3378003891781308618::1759979176::0::1::::<><><>0<>0<><>::uid://dbajuf2k6yre7::::res://Advanced Vehicle Controller/Scenes/start_arrow.glb
+start_arrow.tscn::PackedScene::3378003891781308618::1760056697::0::1::::<><><>0<>0<><>::uid://dbajuf2k6yre7::::res://Advanced Vehicle Controller/Scenes/start_arrow.glb
 stylized_sky.gdshader::Shader/Shader::-1::1758071195::0::1::::<><><>0<>0<><>::
 title_screen.gd::GDScript/GDScript::8277586447360902265::1753660260::0::1::::<>Control<><>0<>0<><>::
 WorldCollisions.tscn::PackedScene/PackedScene::3575095306594688319::1758072083::0::1::::<><><>0<>0<><>::
@@ -103,7 +104,7 @@ texture_02.png::CompressedTexture2D/CompressedTexture2D::1343423080394053938::17
 texture_03.png::CompressedTexture2D/CompressedTexture2D::5054282249589529505::1753660259::1753660445::1::::<><><>0<>0<>bcb47c02eee3c445e7a772e145e496c5<>res://.godot/imported/texture_03.png-42acc42610048ad29e6861e69b516882.s3tc.ctex::
 texture_03_Red.png::CompressedTexture2D/CompressedTexture2D::8066944552372322973::1753660259::1753660445::1::::<><><>0<>0<>401ff6f920ce06eefd38f0a2541d9c7c<>res://.godot/imported/texture_03_Red.png-59d69196a4136c46bf36063a880be49e.s3tc.ctex::
 White Box.tres::StandardMaterial3D/StandardMaterial3D::6582627536853294379::1753660259::0::1::::<><><>0<>0<><>::uid://te08na6s2juo::::res://Advanced Vehicle Controller/Debug content/texture_02.png
-::res://Advanced Vehicle Controller/Scenes/::1759979176
+::res://Advanced Vehicle Controller/Scenes/::1760056696
 arrow.glb::PackedScene/PackedScene::884040513398279522::1759970368::1759970369::1::::<><><>0<>0<>5e259ca8982dfddb65c4ab58259f06d5<>res://.godot/imported/arrow.glb-38a6933d5b424d6cd806f74a7d390bd3.scn::
 cam_holder.tscn::PackedScene/PackedScene::8611761661853993003::1753660259::0::1::::<><><>0<>0<><>::uid://1p26pa17e30j::::res://Advanced Vehicle Controller/Scripts/Cam_Holder.gd
 Debug_Map.tscn::PackedScene/PackedScene::8577942180793110987::1758071307::0::1::::<><><>0<>0<><>::uid://bqhg03u7uopp1::::res://Advanced Vehicle Controller/Debug content/Black Box.tres<>uid://dgucgrkhjqrj0::::res://Advanced Vehicle Controller/Debug content/Red Box.tres<>uid://drtkaugr7kqas::::res://Advanced Vehicle Controller/Vehicle/NightSky/NightSky_Body.tscn<>uid://dcladqkfg3jij::::res://Advanced Vehicle Controller/Debug content/Emission White Box.tres<>uid://c01w6cl6ib7pf::::res://Advanced Vehicle Controller/Debug content/White Box.tres<>uid://d1d0adnny67ho::::res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn<>uid://difi1uhwesclv::::res://Advanced Vehicle Controller/Vehicle/AI_Vehicles/AI_Muscle_Car.tscn<>uid://byy3atqki4s0k::::res://Advanced Vehicle Controller/Scripts/Path_Follow_Setup.gd<>uid://beg78x7knveom::::res://Advanced Vehicle Controller/Vehicle/AI_Vehicles/AI_NightSky.tscn<>uid://bo0sxuk33kxaa::::res://Advanced Vehicle Controller/Vehicle/TGR/TRG.tscn<>uid://bat0h5s3lfqru::::res://Advanced Vehicle Controller/Vehicle/GT30/GT30.tscn
@@ -115,12 +116,12 @@ start_arrow.glb::PackedScene/PackedScene::7230033368353545372::1759978138::17599
 test_world.gd::GDScript/GDScript::-1::1756244884::0::1::::<>Node3D<><>0<>0<><>::
 test_world.tscn::PackedScene/PackedScene::3523877402847435959::1756244889::0::1::::<><><>0<>0<><>::uid://o7gvne15ftck::::res://Advanced Vehicle Controller/Scenes/test_world.gd<>uid://dri2p5hydq006::::res://Advanced Vehicle Controller/Scenes/map.blend<>uid://d1d0adnny67ho::::res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn<>uid://ymkqhj5xv402::::res://Models/Road2Updated.gltf<>uid://bwcxhvcvv554n::::res://nightskysaturn.glb
 title_screen.gd::GDScript/GDScript::8794872560211239961::1759806409::0::1::::<>Control<><>0<>0<><>::
-title_screen.tscn::PackedScene::6737302224114374077::1759979175::0::1::::<><><>0<>0<><>::uid://dxkkjbvtmf7ar::::res://Advanced Vehicle Controller/Scenes/title_screen.gd<>uid://dvpk2xkn2uttg::::res://Advanced Vehicle Controller/Textures/SpeedState_Poster.png<>uid://bpslylaiai81n::::res://Advanced Vehicle Controller/Textures/blowbrush.otf<>uid://c0s2y60fx65jy::::res://Audio/Vlog Latin Event Beat by Infraction [No Copyright Music]  Valencia.mp3
+title_screen.tscn::PackedScene::6737302224114374077::1760056696::0::1::::<><><>0<>0<><>::uid://dxkkjbvtmf7ar::::res://Advanced Vehicle Controller/Scenes/title_screen.gd<>uid://dvpk2xkn2uttg::::res://Advanced Vehicle Controller/Textures/SpeedState_Poster.png<>uid://bpslylaiai81n::::res://Advanced Vehicle Controller/Textures/blowbrush.otf<>uid://c0s2y60fx65jy::::res://Audio/Vlog Latin Event Beat by Infraction [No Copyright Music]  Valencia.mp3
 ui.gd::GDScript/GDScript::2306215330563761639::1753660259::0::1::::<>CanvasLayer<><>0<>0<><>::
-ui.tscn::PackedScene::4377367140124869335::1759979176::0::1::::<><><>0<>0<><>::uid://74fbafrst0sh::::res://Advanced Vehicle Controller/Scenes/ui.gd
+ui.tscn::PackedScene::4377367140124869335::1760056696::0::1::::<><><>0<>0<><>::uid://74fbafrst0sh::::res://Advanced Vehicle Controller/Scenes/ui.gd
 World.tscn::PackedScene/PackedScene::4864849293775976704::1753660259::0::1::::<><><>0<>0<><>::uid://dp8ufpb85ym31::::res://Models/Road2.gltf<>uid://d1d0adnny67ho::::res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn
-::res://Advanced Vehicle Controller/Scripts/::1758071307
-advanced_vehicle_controller.gd::GDScript/GDScript::2472278546070459169::1753660259::0::1::::MVehicle3D<>VehicleBody3D<>res://Advanced Vehicle Controller/Textures/MVehicleBody3D.png<>0<>0<><>::
+::res://Advanced Vehicle Controller/Scripts/::1759981192
+advanced_vehicle_controller.gd::GDScript/GDScript::2472278546070459169::1759981192::0::1::::MVehicle3D<>VehicleBody3D<>res://Advanced Vehicle Controller/Textures/MVehicleBody3D.png<>0<>0<><>::
 Cam_Holder.gd::GDScript/GDScript::1857571108390011307::1753660259::0::1::::<>Node3D<><>0<>0<><>::
 minimap.gd::GDScript/GDScript::2479482204046865057::1753660259::0::1::::<>PanelContainer<><>0<>0<><>::
 Path_Follow_Setup.gd::GDScript/GDScript::4122199096027503692::1753660259::0::1::::<>PathFollow3D<><>0<>0<><>::
@@ -136,10 +137,10 @@ speedstate_new_map.blend::PackedScene/PackedScene::3175825359667042089::17552256
 SpeedState_Poster.png::CompressedTexture2D/CompressedTexture2D::8664850044264624456::1754859717::1754860361::1::::<><><>0<>0<>05617edbab6deb385fafda47bc916ce6<>res://.godot/imported/SpeedState_Poster.png-1a0cfb5e3114299b237b6bdbb2ac2478.ctex::
 Veh_Body_Material.tres::StandardMaterial3D/StandardMaterial3D::6750229541856184172::1753660259::0::1::::<><><>0<>0<><>::
 ::res://Advanced Vehicle Controller/Vehicle/::1753660260
-::res://Advanced Vehicle Controller/Vehicle/AI_Vehicles/::1759979176
+::res://Advanced Vehicle Controller/Vehicle/AI_Vehicles/::1760056697
 AI_Muscle_Body.tres::StandardMaterial3D/StandardMaterial3D::1656150691722543014::1753660259::0::1::::<><><>0<>0<><>::uid://c07fsef1twsm7::::res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle TXT/Bodykit_Base_Color.png
-AI_Muscle_Car.tscn::PackedScene::7731627917823788771::1759979176::0::1::::<><><>0<>0<><>::uid://sgl2831dr1i0::::res://Advanced Vehicle Controller/Scripts/Race_follow_AI.gd<>uid://xuitbjlknu2y::::res://Advanced Vehicle Controller/Vehicle/AI_Vehicles/AI_Muscle_Body.tres<>uid://c4raulc1so1ph::::res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle TXT/Muscle Details.tres<>uid://cl7ae8f6sti0r::::res://Advanced Vehicle Controller/Vehicle/Muscle/New Muscle Wheel.tscn
-AI_NightSky.tscn::PackedScene::2681565457680329392::1759979176::0::1::::<><><>0<>0<><>::uid://r6cwck1s864m::::res://Advanced Vehicle Controller/Scripts/Race_NaviAgent_AI.gd<>uid://bg64ka54o05w2::::res://Advanced Vehicle Controller/Vehicle/NightSky/NS_Comp.tres<>uid://b4o8duuaa8tnl::::res://Advanced Vehicle Controller/Vehicle/AI_Vehicles/AI_NS_Body.tres<>uid://i5lfu84yoc3h::::res://Advanced Vehicle Controller/Vehicle/NightSky/NightSky_Wheel.tscn<>uid://cw1xby0awir0u::::res://Advanced Vehicle Controller/Textures/Map_indicator2.png
+AI_Muscle_Car.tscn::PackedScene::7731627917823788771::1760056696::0::1::::<><><>0<>0<><>::uid://sgl2831dr1i0::::res://Advanced Vehicle Controller/Scripts/Race_follow_AI.gd<>uid://xuitbjlknu2y::::res://Advanced Vehicle Controller/Vehicle/AI_Vehicles/AI_Muscle_Body.tres<>uid://c4raulc1so1ph::::res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle TXT/Muscle Details.tres<>uid://cl7ae8f6sti0r::::res://Advanced Vehicle Controller/Vehicle/Muscle/New Muscle Wheel.tscn
+AI_NightSky.tscn::PackedScene::2681565457680329392::1760056697::0::1::::<><><>0<>0<><>::uid://r6cwck1s864m::::res://Advanced Vehicle Controller/Scripts/Race_NaviAgent_AI.gd<>uid://bg64ka54o05w2::::res://Advanced Vehicle Controller/Vehicle/NightSky/NS_Comp.tres<>uid://b4o8duuaa8tnl::::res://Advanced Vehicle Controller/Vehicle/AI_Vehicles/AI_NS_Body.tres<>uid://i5lfu84yoc3h::::res://Advanced Vehicle Controller/Vehicle/NightSky/NightSky_Wheel.tscn<>uid://cw1xby0awir0u::::res://Advanced Vehicle Controller/Textures/Map_indicator2.png
 AI_NS_Body.tres::StandardMaterial3D/StandardMaterial3D::4452808537260295705::1753660259::0::1::::<><><>0<>0<><>::uid://ccyok3ltornu8::::res://Advanced Vehicle Controller/Vehicle/NightSky/Skyline_Body_Body_BaseColor.png
 ::res://Advanced Vehicle Controller/Vehicle/GT30/::1753660446
 GT30.fbx::PackedScene/PackedScene::8436515217408669627::1753660260::1753660446::1::::<><><>0<>0<>40f7512b14c978db217bece354d5453f<>res://.godot/imported/GT30.fbx-a9d2d82754787697beb75e99c42cd714.scn::
@@ -152,8 +153,8 @@ GT30_Wheel.tscn::PackedScene/PackedScene::4636932385400757386::1753660260::0::1:
 ::res://Advanced Vehicle Controller/Vehicle/GT30/GT30/::1753660445
 GT30_GlassAndDeco_BaseColor.png::CompressedTexture2D/CompressedTexture2D::1337842137968885099::1753660260::1753660445::1::::<><><>0<>0<>2fef380d194fe14c15586618426e49f5<>res://.godot/imported/GT30_GlassAndDeco_BaseColor.png-117e774c9cac9f874da6b927680d7544.ctex::
 GT30_Wheel_GT30_Wheel_BaseColor.png::CompressedTexture2D/CompressedTexture2D::4985776426118850478::1753660260::1753660445::1::::<><><>0<>0<>1adbe362f7301419b3e7885c669041ea<>res://.godot/imported/GT30_Wheel_GT30_Wheel_BaseColor.png-8b2b03f358a73d442c4fa0e003a4cdc7.ctex::
-::res://Advanced Vehicle Controller/Vehicle/Muscle/::1759979176
-Muscle Car.tscn::PackedScene::8991883222025982164::1759979176::0::1::::<><><>0<>0<><>::uid://bbhuci2yxbttx::::res://Advanced Vehicle Controller/Scripts/advanced_vehicle_controller.gd<>uid://iqf08jtbxlde::::res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle TXT/Muscle Body.tres<>uid://c4raulc1so1ph::::res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle TXT/Muscle Details.tres<>uid://cl7ae8f6sti0r::::res://Advanced Vehicle Controller/Vehicle/Muscle/New Muscle Wheel.tscn<>uid://ojw67kgcwe61::::res://Advanced Vehicle Controller/Vehicle/NightSky/Tire_smoke.tscn<>uid://lwrq5l0gacr4::::res://Advanced Vehicle Controller/Vehicle/NightSky/Car Engine.mp3<>uid://c721hburp5xh5::::res://Advanced Vehicle Controller/Vehicle/NightSky/rubber_sound.mp3
+::res://Advanced Vehicle Controller/Vehicle/Muscle/::1760056697
+Muscle Car.tscn::PackedScene::8991883222025982164::1760056697::0::1::::<><><>0<>0<><>::uid://bbhuci2yxbttx::::res://Advanced Vehicle Controller/Scripts/advanced_vehicle_controller.gd<>uid://iqf08jtbxlde::::res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle TXT/Muscle Body.tres<>uid://c4raulc1so1ph::::res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle TXT/Muscle Details.tres<>uid://cl7ae8f6sti0r::::res://Advanced Vehicle Controller/Vehicle/Muscle/New Muscle Wheel.tscn<>uid://ojw67kgcwe61::::res://Advanced Vehicle Controller/Vehicle/NightSky/Tire_smoke.tscn<>uid://lwrq5l0gacr4::::res://Advanced Vehicle Controller/Vehicle/NightSky/Car Engine.mp3<>uid://c721hburp5xh5::::res://Advanced Vehicle Controller/Vehicle/NightSky/rubber_sound.mp3
 New Muscle Body.fbx::PackedScene/PackedScene::674107783050389539::1753660260::1753660446::1::::<><><>0<>0<>504568131d51af4e3f8bb9c459e974fe<>res://.godot/imported/New Muscle Body.fbx-4df3635a26dc7f54986e7ea48323ba63.scn::
 New Muscle Wheel.fbx::PackedScene/PackedScene::7153773091784423842::1753660260::1753660446::1::::<><><>0<>0<>7ec214c9e8bf7fcdfbdc3efc86ae7bea<>res://.godot/imported/New Muscle Wheel.fbx-865a5148201242e29f32ae7d8ffc67d2.scn::
 New Muscle Wheel.tscn::PackedScene/PackedScene::5610987621137976667::1753660260::0::1::::<><><>0<>0<><>::uid://b6agjxwllf1uf::::res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle TXT/Muscle Wheels.tres
@@ -195,8 +196,8 @@ Vlog Latin Event Beat by Infraction [No Copyright Music]  Valencia.mp3::AudioStr
 [FREE NO COPYRIGHT BEAT 2023] -- WHY NEW HIP HOP  FREESTYLE TYPE INSTRUMENTAL  PUNGZ BEAT.mp3::AudioStreamMP3/AudioStreamMP3::6177440225658935387::1756350683::1756353156::1::::<><><>0<>0<>3aa4c3c48cae190ec348f6063c088f4f<>res://.godot/imported/[FREE NO COPYRIGHT BEAT 2023] -- WHY NEW HIP HOP  FREESTYLE TYPE INSTRUMENTAL  PUNGZ BEAT.mp3-d04b32651b726328fd69840041250cad.mp3str::
 [FREE NO COPYRIGHT BEAT 2023] FIST NEW HIP HOP  FREESTYLE TYPE INSTRUMENTAL  PUNGZ BEAT.mp3::AudioStreamMP3/AudioStreamMP3::3616853577784226630::1756350683::1756353156::1::::<><><>0<>0<>902524bdc25551b45ffa4f44327c52a7<>res://.godot/imported/[FREE NO COPYRIGHT BEAT 2023] FIST NEW HIP HOP  FREESTYLE TYPE INSTRUMENTAL  PUNGZ BEAT.mp3-38f077dd05d20b866bf811d7280d3888.mp3str::
 [FREE]  RICH  Freestyle Trap Beat  HARD Trap Beat 2023  Freestyle Type Beat  Trap Instrumental.mp3::AudioStreamMP3/AudioStreamMP3::3817966394673407024::1756350683::1756353156::1::::<><><>0<>0<>fe7e2a54510e8e1558f4e08ec3f165b9<>res://.godot/imported/[FREE]  RICH  Freestyle Trap Beat  HARD Trap Beat 2023  Freestyle Type Beat  Trap Instrumental.mp3-c58abba64918869f282dab1dd3f65e56.mp3str::
-::res://Models/::1759979653
-pause_menu_shader.gdshader::Shader::7776729770432462857::1759979653::0::1::::<><><>0<>0<><>::
+::res://Models/::1760056749
+pause_menu_shader.gdshader::Shader::7776729770432462857::1760056749::0::1::::<><><>0<>0<><>::
 PavingStones081_4K-JPG_Color.jpg::CompressedTexture2D/CompressedTexture2D::1450059156655044854::1753660260::1753660445::1::::<><><>0<>0<>555f93411ad5760854643ff87e4a4998<>res://.godot/imported/PavingStones081_4K-JPG_Color.jpg-7e1edc0471b2d3a94bcd72b9e6ad9235.s3tc.ctex::
 PavingStones081_4K-JPG_NormalGL.jpg::CompressedTexture2D/CompressedTexture2D::7873123021528081004::1753660260::1753660445::1::::<><><>0<>0<>fd029b7bec9b51c217288c89509f639a<>res://.godot/imported/PavingStones081_4K-JPG_NormalGL.jpg-eedce7b343f7b37ba44e8545ef5716e8.s3tc.ctex::
 PavingStones081_4K-JPG_Roughness.png::CompressedTexture2D/CompressedTexture2D::5231182270557745437::1753660260::1753660444::1::::<><><>0<>0<>b7cce85e595ac2a86d3c93f34060205e<>res://.godot/imported/PavingStones081_4K-JPG_Roughness.png-7cf1fb8727b57ada333729a6594e4a31.s3tc.ctex::
@@ -232,7 +233,7 @@ sky_night.png::CompressedTexture2D/CompressedTexture2D::996487517237471581::1758
 stylized_sky.gdshader::Shader/Shader::2751150190317879547::1758071195::0::1::::<><><>0<>0<><>::
 ::res://sky/assets/::1758072083
 shooting_star_sampler.png::CompressedTexture2D/CompressedTexture2D::8675854232450382322::1758071195::1758072083::1::::<><><>0<>0<>20fb801fd85fbb7070e9a34d1ff92a92<>res://.godot/imported/shooting_star_sampler.png-5fea4fa7fa8d168b63ad084ff6549d09.ctex::
-::res://sky/examples/::1759975646
-day_sky.tres::ShaderMaterial::4926931528438958582::1759975646::0::1::::<><><>0<>0<><>::uid://bfgxbogpedbb4::::res://sky/stylized_sky.gdshader
-night_sky.tres::ShaderMaterial::7205518714825736181::1759975646::0::1::::<><><>0<>0<><>::uid://bfgxbogpedbb4::::res://sky/stylized_sky.gdshader<>uid://dvuwb0yce4sb7::::res://sky/assets/shooting_star_sampler.png
+::res://sky/examples/::1760044128
+day_sky.tres::ShaderMaterial/ShaderMaterial::4926931528438958582::1759975646::0::1::::<><><>0<>0<><>::uid://bfgxbogpedbb4::::res://sky/stylized_sky.gdshader
+night_sky.tres::ShaderMaterial/ShaderMaterial::7205518714825736181::1760044128::0::1::::<><><>0<>0<><>::uid://bfgxbogpedbb4::::res://sky/stylized_sky.gdshader<>uid://dvuwb0yce4sb7::::res://sky/assets/shooting_star_sampler.png
 sky.tscn::PackedScene/PackedScene::5252560045636019311::1758071195::0::1::::<><><>0<>0<><>::uid://m80rmki4fbox::::res://night_sky.tres

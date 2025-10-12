@@ -1,14 +1,11 @@
-res://Advanced Vehicle Controller/Scenes/title_screen.tscn
+res://Newmainscene.tscn
 res://Models/pause_menu_shader.gdshader
 res://night_sky.tres
-res://Advanced Vehicle Controller/Scripts/advanced_vehicle_controller.gd
-res://mainscene.gd
-res://race_manager.gd
-res://Newmainscene.tscn
+res://Advanced Vehicle Controller/Scenes/title_screen.tscn
 res://Advanced Vehicle Controller/Scenes/ui.tscn
 res://Advanced Vehicle Controller/Vehicle/AI_Vehicles/AI_Muscle_Car.tscn
 res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn
 res://Advanced Vehicle Controller/Vehicle/AI_Vehicles/AI_NightSky.tscn
 res://pause_menu.tscn
 res://start_arrow.tscn
-res://second_race_follow.gd
+res://mainscene.gd
