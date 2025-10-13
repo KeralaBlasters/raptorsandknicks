@@ -5,6 +5,7 @@ extends Node3D
 @onready var intro_spawn = $Races/IntroRace/StartAndFinish/Marker3D
 var can_start_intro_race = false
 @onready var intro_race_follow: PathFollow3D = $Races/IntroRace/IntroRaceFollow
+@onready var second_race_follow: PathFollow3D = $Races/SecondRace/SecondRaceFollow
 
 var can_start_second_race = false
 
@@ -13,6 +14,8 @@ var can_start_second_race = false
 var last_index: int = -1
 
 var ai_intro_racer = preload("res://Advanced Vehicle Controller/Vehicle/AI_Vehicles/AI_Muscle_Car.tscn")
+
+var ai_second_racer = preload("res://Advanced Vehicle Controller/Vehicle/AI_Vehicles/AI_Muscle_Car2.tscn")
 
 var intro_checkpoint_number = 0
 
@@ -24,6 +27,7 @@ func _ready() -> void:
 	randomize()
 	play_random_track()
 	$Races/IntroRace/Arrows.hide()
+	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -175,13 +179,9 @@ func _on_second_checkpoint_body_entered(body: Node3D) -> void:
 		
 
 
-
-
 func _on_third_checkpoint_body_entered(body: Node3D) -> void:
 	if body.name == "Muscle Car":
 		intro_checkpoint_number += 1
-
-
 
 
 func _on_fourth_checkpoint_body_entered(body: Node3D) -> void:
@@ -227,29 +227,50 @@ func _on_finish_body_entered(body: Node3D) -> void:
 func finish_intro_race():
 	#$Races/IntroRace.queue_free()
 	text.text = "FINISH"
+	$Races/IntroRace.hide()
 	await get_tree().create_timer(3.0).timeout
 	text.text = ""
 	var delete = $Delete
-	ai_intro_racer.global_position = delete.global_position
+	#ai_intro_racer.global_position = delete.global_position
+	#$Races/SecondRace/SecondRaceCheckpoints.queue_free()
+	await get_tree().create_timer(10.0).timeout
+	$Races/SecondRace.show()
+	$Races/SecondRace/SecondArrows.hide()
 
 
 
-
-func _on_enter_second_race_area_body_entered(body: Node3D) -> void:
+func _on_second_race_start_area_body_entered(body: Node3D) -> void:
 	if body.name == "Muscle Car":
 		text.text = "PRESS ENTER TO START THE SECOND RACE"
 		can_start_second_race = true
 	else:
 		pass
+		
 
 
 
-func _on_enter_second_race_area_body_exited(body: Node3D) -> void:
+func _on_second_race_start_area_body_exited(body: Node3D) -> void:
 	if body.name == "Muscle Car":
 		text.text = ""
 		can_start_second_race = false
 	else:
 		pass
 
+
+
 func start_second_race():
-	pass
+	$Races/SecondRace/SecondArrows.show()
+	var player_second_spawn = $Races/SecondRace/PlayerSecondSpawn
+	var player = $"Muscle Car"
+	player.global_position = player_second_spawn.global_position
+	player.global_rotation = player_second_spawn.global_rotation
+	var second_race_path = $Races/SecondRace/SecondRaceFollow
+	var second_ai_spawn = $Races/SecondRace/SecondSpawn
+	var second_ai_car = ai_second_racer.instantiate()
+	$Races/SecondRace.add_child(second_ai_car)
+	var path = second_race_path.get_parent() as Path3D
+	var spawned_second_car = second_ai_car
+	second_race_follow.target_veh = second_ai_car
+	second_ai_car.target_ray = second_race_path
+	second_ai_car.global_transform.origin = second_ai_spawn.global_transform.origin
+	

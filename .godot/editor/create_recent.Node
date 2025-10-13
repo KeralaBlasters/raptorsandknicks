@@ -1,7 +1,7 @@
-Marker3D
-Node3D
 CollisionShape3D
 Area3D
+Node3D
+Marker3D
 ColorRect
 AnimationPlayer
 Button
