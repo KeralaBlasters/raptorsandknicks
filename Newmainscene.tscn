@@ -418,7 +418,6 @@ shadow_enabled = true
 
 [node name="IntroRace" type="Path3D" parent="Races"]
 transform = Transform3D(0.291103, -0.956692, 0, 0.956692, 0.291103, 0, 0, 0, 1, 472.255, 0.41621, -116.021)
-visible = false
 curve = SubResource("Curve3D_u514n")
 
 [node name="PlayerIntroSpawn" type="Marker3D" parent="Races/IntroRace"]
@@ -559,6 +558,7 @@ transform = Transform3D(1.35956, 7.65353, 1.89077, -4.46811, 2.32882, -6.21391, 
 
 [node name="SecondRace" type="Path3D" parent="Races"]
 transform = Transform3D(0.291103, -0.956692, 0, 0.956692, 0.291103, 0, 0, 0, 1, -127.275, 0.41621, -278.89)
+visible = false
 curve = SubResource("Curve3D_ldy72")
 
 [node name="PlayerSecondSpawn" type="Marker3D" parent="Races/SecondRace"]

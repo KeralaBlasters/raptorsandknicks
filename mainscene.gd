@@ -113,6 +113,7 @@ func _on_enter_race_area_body_exited(body: Node3D) -> void:
 
 
 func start_intro_race():
+	intro_checkpoint_number = 0
 	var player_intro_spawn = $Races/IntroRace/PlayerIntroSpawn
 	var player = $"Muscle Car"
 	player.global_position = player_intro_spawn.global_position
@@ -236,6 +237,8 @@ func finish_intro_race():
 	await get_tree().create_timer(10.0).timeout
 	$Races/SecondRace.show()
 	$Races/SecondRace/SecondArrows.hide()
+	intro_checkpoint_number = -100
+	
 
 
 
@@ -259,6 +262,7 @@ func _on_second_race_start_area_body_exited(body: Node3D) -> void:
 
 
 func start_second_race():
+	$Races/SecondRace/second_start_arrow.hide()
 	$Races/SecondRace/SecondArrows.show()
 	var player_second_spawn = $Races/SecondRace/PlayerSecondSpawn
 	var player = $"Muscle Car"
