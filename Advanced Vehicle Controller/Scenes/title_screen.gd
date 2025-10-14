@@ -14,7 +14,7 @@ func _ready() -> void:
 
 
 func _on_play_button_pressed():
-	get_tree().change_scene_to_file("res://Newmainscene.tscn")
+	get_tree().change_scene_to_file("res://info.tscn")
 
 
 func _on_options_button_pressed():

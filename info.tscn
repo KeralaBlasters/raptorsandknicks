@@ -1,0 +1,116 @@
+[gd_scene load_steps=10 format=3 uid="uid://df20y77he48b0"]
+
+[ext_resource type="FontFile" uid="uid://c8hsl52u1yako" path="res://blowbrush.otf" id="1_fg2qe"]
+[ext_resource type="Script" uid="uid://c7xr68okal2g0" path="res://info.gd" id="1_y06mq"]
+[ext_resource type="FontFile" uid="uid://bpslylaiai81n" path="res://Advanced Vehicle Controller/Textures/blowbrush.otf" id="2_tk7c1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y06mq"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ohlig"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_apbm5"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.917647, 0.0588235, 0.0666667, 1)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dnune"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qjc5n"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3rpuc"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.917647, 0.0588235, 0.0666667, 1)
+border_blend = true
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_y06mq")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(1920, 1080)
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 287.0
+offset_top = 366.0
+offset_right = 1633.0
+offset_bottom = 525.0
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_fg2qe")
+theme_override_font_sizes/font_size = 50
+text = "WE DO NOT ENCOURAGE SPEEDING OR THE BREAKING OF ROAD RULES. 
+
+ALWWAYS OBEY ALL TRAFFIC RULES WHEN DRIVING."
+horizontal_alignment = 1
+
+[node name="Continue" type="Button" parent="."]
+offset_left = 770.0
+offset_top = 641.0
+offset_right = 1126.0
+offset_bottom = 727.0
+theme_override_colors/font_hover_color = Color(0.917647, 0.0588235, 0.0666667, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.917647, 0.0588235, 0.0666667, 1)
+theme_override_fonts/font = ExtResource("2_tk7c1")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/hover = SubResource("StyleBoxFlat_y06mq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ohlig")
+theme_override_styles/normal = SubResource("StyleBoxFlat_apbm5")
+text = "CONTINUE
+"
+
+[node name="Quit" type="Button" parent="."]
+custom_minimum_size = Vector2(356, 86)
+offset_left = 770.0
+offset_top = 787.0
+offset_right = 1126.0
+offset_bottom = 873.0
+theme_override_colors/font_hover_color = Color(0.917647, 0.0588235, 0.0666667, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.917647, 0.0588235, 0.0666667, 1)
+theme_override_fonts/font = ExtResource("2_tk7c1")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/hover = SubResource("StyleBoxFlat_dnune")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_qjc5n")
+theme_override_styles/normal = SubResource("StyleBoxFlat_3rpuc")
+text = "QUIT"
+
+[connection signal="pressed" from="Continue" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
