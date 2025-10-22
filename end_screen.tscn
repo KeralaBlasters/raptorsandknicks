@@ -1,0 +1,76 @@
+[gd_scene load_steps=7 format=3 uid="uid://bj28v8fklm4ar"]
+
+[ext_resource type="Script" uid="uid://dfi0lf86wt7ad" path="res://end_screen.gd" id="1_xu7hh"]
+[ext_resource type="FontFile" uid="uid://c8hsl52u1yako" path="res://blowbrush.otf" id="2_pmjk2"]
+[ext_resource type="FontFile" uid="uid://bpslylaiai81n" path="res://Advanced Vehicle Controller/Textures/blowbrush.otf" id="3_d75mr"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_be1gp"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kaxt3"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2afhe"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.917647, 0.0588235, 0.0666667, 1)
+border_blend = true
+
+[node name="EndScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xu7hh")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1959.0
+offset_bottom = 1117.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 422.0
+offset_top = 479.0
+offset_right = 1460.0
+offset_bottom = 530.0
+theme_override_fonts/font = ExtResource("2_pmjk2")
+theme_override_font_sizes/font_size = 50
+text = "CONGRATULATIONS YOU HAVE COMPLETED SPEEDSTATE"
+
+[node name="Quit" type="Button" parent="."]
+custom_minimum_size = Vector2(356, 86)
+layout_mode = 0
+offset_left = 756.0
+offset_top = 660.0
+offset_right = 1112.0
+offset_bottom = 746.0
+theme_override_colors/font_hover_color = Color(0.917647, 0.0588235, 0.0666667, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.917647, 0.0588235, 0.0666667, 1)
+theme_override_fonts/font = ExtResource("3_d75mr")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/hover = SubResource("StyleBoxFlat_be1gp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_kaxt3")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2afhe")
+text = "QUIT"
+
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

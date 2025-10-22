@@ -460,7 +460,6 @@ shadow_enabled = true
 
 [node name="IntroRace" type="Path3D" parent="Races"]
 transform = Transform3D(0.291103, -0.956692, 0, 0.956692, 0.291103, 0, 0, 0, 1, 472.255, 0.41621, -116.021)
-visible = false
 curve = SubResource("Curve3D_u514n")
 
 [node name="PlayerIntroSpawn" type="Marker3D" parent="Races/IntroRace"]
@@ -774,8 +773,12 @@ shape = SubResource("BoxShape3D_gdfqa")
 transform = Transform3D(0.945936, -0.319554, -0.0555899, 0.324282, 0.928151, 0.182693, -0.00678443, -0.190843, 0.981597, 0.309021, 4.56737, -10.0352)
 shape = SubResource("BoxShape3D_b73nd")
 
+[node name="SecondStartAreaPosition" type="Marker3D" parent="Races/SecondRace"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.310146, 1.01929, -9.26462)
+
 [node name="ThirdRace" type="Path3D" parent="Races"]
 transform = Transform3D(0.291103, -0.956692, 0, 0.956692, 0.291103, 0, 0, 0, 1, 472.255, 0.41621, -116.021)
+visible = false
 curve = SubResource("Curve3D_5vw37")
 
 [node name="third_start_arrow" parent="Races/ThirdRace" instance=ExtResource("8_iq26o")]
@@ -924,6 +927,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.01, 65.7615, 134.245)
 transform = Transform3D(0.944916, -0.306907, -0.113762, 0.326921, 0.867953, 0.373871, -0.0160036, -0.390468, 0.920478, 7.69439, -6.51028, 3.59521)
 shape = SubResource("BoxShape3D_k87fx")
 
+[node name="ThirdStartAreaPosition" type="Marker3D" parent="Races/ThirdRace"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.0268, 59.2441, 113.006)
+
 [node name="Delete" type="Marker3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -64.6714, 0)
 
@@ -957,3 +963,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -64.6714, 0)
 [connection signal="body_exited" from="Races/SecondRace/SecondRaceStartArea" to="." method="_on_second_race_start_area_body_exited"]
 [connection signal="body_entered" from="Races/ThirdRace/ThirdRaceStartArea" to="." method="_on_third_race_start_area_body_entered"]
 [connection signal="body_exited" from="Races/ThirdRace/ThirdRaceStartArea" to="." method="_on_third_race_start_area_body_exited"]
+[connection signal="body_entered" from="Races/ThirdRace/ThirdRaceCheckpoints/ThirdCheckpoint1" to="." method="_on_third_checkpoint_1_body_entered"]
+[connection signal="body_entered" from="Races/ThirdRace/ThirdRaceCheckpoints/ThirdCheckpoint2" to="." method="_on_third_checkpoint_2_body_entered"]
+[connection signal="body_entered" from="Races/ThirdRace/ThirdRaceCheckpoints/ThirdCheckpoint3" to="." method="_on_third_checkpoint_3_body_entered"]
+[connection signal="body_entered" from="Races/ThirdRace/ThirdRaceCheckpoints/ThirdCheckpoint4" to="." method="_on_third_checkpoint_4_body_entered"]
+[connection signal="body_entered" from="Races/ThirdRace/ThirdRaceCheckpoints/ThirdCheckpoint5" to="." method="_on_third_checkpoint_5_body_entered"]
+[connection signal="body_entered" from="Races/ThirdRace/ThirdRaceCheckpoints/ThirdCheckpoint6" to="." method="_on_third_checkpoint_6_body_entered"]
+[connection signal="body_entered" from="Races/ThirdRace/ThirdRaceCheckpoints/ThirdCheckpoint7" to="." method="_on_third_checkpoint_7_body_entered"]
+[connection signal="body_entered" from="Races/ThirdRace/ThirdRaceCheckpoints/ThirdCheckpoint8" to="." method="_on_third_checkpoint_8_body_entered"]
+[connection signal="body_entered" from="Races/ThirdRace/ThirdRaceCheckpoints/ThirdCheckpoint9" to="." method="_on_third_checkpoint_9_body_entered"]
+[connection signal="body_entered" from="Races/ThirdRace/ThirdRaceCheckpoints/ThirdCheckpoint10" to="." method="_on_third_checkpoint_10_body_entered"]
