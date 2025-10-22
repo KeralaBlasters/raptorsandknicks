@@ -3,4 +3,4 @@ extends Control
 
 
 func _on_quit_pressed() -> void:
-	get_tree().quitss
+	get_tree().quit

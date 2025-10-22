@@ -1,0 +1,13 @@
+res://Advanced Vehicle Controller/Scenes/title_screen.tscn
+res://Models/pause_menu_shader.gdshader
+res://night_sky.tres
+res://info.tscn
+res://Newmainscene.tscn
+res://Advanced Vehicle Controller/Scenes/ui.tscn
+res://Advanced Vehicle Controller/Vehicle/Muscle/Muscle Car.tscn
+res://Advanced Vehicle Controller/Vehicle/AI_Vehicles/AI_Muscle_Car2.tscn
+res://Advanced Vehicle Controller/Vehicle/AI_Vehicles/AI_Muscle_Car3.tscn
+res://end_screen.tscn
+res://mainscene.gd
+res://end_screen.gd
+res://Advanced Vehicle Controller/Scenes/MinimapCamera.tscn

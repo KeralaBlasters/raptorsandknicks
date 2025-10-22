@@ -48,13 +48,15 @@ color = Color(0, 0, 0, 1)
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 422.0
-offset_top = 479.0
-offset_right = 1460.0
-offset_bottom = 530.0
+offset_left = 141.0
+offset_top = 477.0
+offset_right = 1729.0
+offset_bottom = 582.0
 theme_override_fonts/font = ExtResource("2_pmjk2")
 theme_override_font_sizes/font_size = 50
-text = "CONGRATULATIONS YOU HAVE COMPLETED SPEEDSTATE"
+text = "CONGRATULATIONS YOU HAVE BECOME THE BEST RACER IN THE CITY AND YOU HAVE 
+COMPLETED SPEEDSTATE"
+horizontal_alignment = 1
 
 [node name="Quit" type="Button" parent="."]
 custom_minimum_size = Vector2(356, 86)

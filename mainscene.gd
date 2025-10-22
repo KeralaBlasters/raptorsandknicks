@@ -38,7 +38,7 @@ func _ready() -> void:
 	var second_enter_area = $Races/SecondRace/SecondRaceStartArea
 	var third_enter_area = $Races/ThirdRace/ThirdRaceStartArea
 	second_enter_area.global_position = delete.global_position
-	third_enter_area.global_position = delete.global_position
+	#third_enter_area.global_position = delete.global_position
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -335,8 +335,10 @@ func _on_second_race_start_area_body_exited(body: Node3D) -> void:
 func start_second_race():
 	second_ai_checkpoint_number = 0
 	second_checkpoint_number = 0
-	$Races/SecondRace/second_start_arrow.hide()
-	$Races/SecondRace/SecondArrows.show()
+	var start_arrow = $Races/SecondRace/second_start_arrow
+	start_arrow.hide()
+	var arrows = $Races/SecondRace/SecondArrows
+	arrows.show()
 	var player_second_spawn = $Races/SecondRace/PlayerSecondSpawn
 	var player = $"Muscle Car"
 	player.global_position = player_second_spawn.global_position
@@ -485,7 +487,7 @@ func finish_second_race():
 	$Races/ThirdRace/ThirdArrows.hide()
 	var third_start_area_pos = $Races/ThirdRace/ThirdStartAreaPosition
 	var third_start_area = $Races/ThirdRace/ThirdRaceStartArea
-	third_start_area.global_position = third_start_area_pos.global_position
+	#third_start_area.global_position = third_start_area_pos.global_position
 	var second_race = $Races/SecondRace
 	second_race.hide()
 	second_race.global_position = delete.global_position
@@ -638,10 +640,7 @@ func finish_third_race():
 	var third_start_area_pos = $Races/ThirdRace/ThirdStartAreaPosition
 	var third_start_area = $Races/ThirdRace/ThirdRaceStartArea
 	third_start_area.global_position = third_start_area_pos.global_position
-	await get_tree().create_timer(10.0).timeout
-	text.text = "CONGRATULATIONS ON BECOMING THE BEST RACER IN THE CITY"
-	await get_tree().create_timer(10.0).timeout
-	text.text = ""
+	
 	get_tree().change_scene_to_file("res://end_screen.tscn")
 
 func ai_finish_third_race():
