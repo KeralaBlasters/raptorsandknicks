@@ -701,7 +701,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -64.6714, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.802948, -0.563713, 2.36327)
 
 [node name="Muscle Car" parent="." instance=ExtResource("2_15qjk")]
-transform = Transform3D(-0.0890852, 0, 0.996023, 0, 1, 0, -0.996023, 0, -0.0890852, -149.196, -0.024646, -301.584)
+transform = Transform3D(-0.0890852, 0, 0.996023, 0, 1, 0, -0.996023, 0, -0.0890852, 492.953, -0.024646, 112.107)
 is_current_veh = true
 use_energy = false
 
