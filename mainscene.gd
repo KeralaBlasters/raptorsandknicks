@@ -22,7 +22,6 @@ var intro_checkpoint_number = -1000
 var second_checkpoint_number = -1000
 var third_checkpoint_number = -1000
 
-var intro_ai_checkpoint_number = -1000
 var second_ai_checkpoint_number = -1000
 var third_ai_checkpoint_number = -1000
 
@@ -37,7 +36,7 @@ func _ready() -> void:
 	var delete = $Delete
 	var second_enter_area = $Races/SecondRace/SecondRaceStartArea
 	var third_enter_area = $Races/ThirdRace/ThirdRaceStartArea
-	second_enter_area.global_position = delete.global_position
+	#second_enter_area.global_position = delete.global_position
 	#third_enter_area.global_position = delete.global_position
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -69,8 +68,6 @@ func _process(delta: float) -> void:
 	if intro_checkpoint_number == 9:
 		finish_intro_race()
 	
-	if intro_ai_checkpoint_number == 9:
-		ai_finish_intro_race()
 	
 	if second_checkpoint_number == 14:
 		finish_second_race()
@@ -101,7 +98,7 @@ func show_intro():
 	await get_tree().create_timer(5.0).timeout
 	text.text = "YOU WILL HAVE TO BECOME THE BEST RACER IN THE CITY"
 	await get_tree().create_timer(5.0).timeout
-	text.text = "USE THE ARROW KEYS TO DRIVE"
+	text.text = "USE THE ARROW KEYS OR WASD TO DRIVE"
 	await get_tree().create_timer(5.0).timeout
 	text.text = "PRESS F TO TURN YOUR HEADLIGHTS ON AND OFF"
 	await get_tree().create_timer(3.0).timeout
@@ -145,7 +142,6 @@ func _on_enter_race_area_body_exited(body: Node3D) -> void:
 
 
 func start_intro_race():
-	intro_ai_checkpoint_number = 0
 	intro_checkpoint_number = 0
 	var player_intro_spawn = $Races/IntroRace/PlayerIntroSpawn
 	var player = $"Muscle Car"
@@ -206,32 +202,29 @@ func _on_first_checkpoint_body_entered(body: Node3D) -> void:
 	if body.name == "Muscle Car":
 		intro_checkpoint_number += 1
 		
-	if body.name == "AI_Muscle_Car":
-		intro_ai_checkpoint_number +=1
+
+
 
 
 func _on_second_checkpoint_body_entered(body: Node3D) -> void:
 	if body.name == "Muscle Car":
 		intro_checkpoint_number += 1
 		
-	if body.name == "AI_Muscle_Car":
-		intro_ai_checkpoint_number +=1
+
 
 
 func _on_third_checkpoint_body_entered(body: Node3D) -> void:
 	if body.name == "Muscle Car":
 		intro_checkpoint_number += 1
 		
-	if body.name == "AI_Muscle_Car":
-		intro_ai_checkpoint_number +=1
+
 
 
 func _on_fourth_checkpoint_body_entered(body: Node3D) -> void:
 	if body.name == "Muscle Car":
 		intro_checkpoint_number += 1
 		
-	if body.name == "AI_Muscle_Car":
-		intro_ai_checkpoint_number +=1
+
 
 
 
@@ -240,8 +233,7 @@ func _on_fifth_checkpoint_body_entered(body: Node3D) -> void:
 	if body.name == "Muscle Car":
 		intro_checkpoint_number += 1
 		
-	if body.name == "AI_Muscle_Car":
-		intro_ai_checkpoint_number +=1
+
 
 
 
@@ -250,17 +242,14 @@ func _on_sixth_checkpoint_body_entered(body: Node3D) -> void:
 	if body.name == "Muscle Car":
 		intro_checkpoint_number += 1
 		
-	if body.name == "AI_Muscle_Car":
-		intro_ai_checkpoint_number +=1
+
 
 
 
 func _on_seventh_checkpoint_body_entered(body: Node3D) -> void:
 	if body.name == "Muscle Car":
 		intro_checkpoint_number += 1
-		
-	if body.name == "AI_Muscle_Car":
-		intro_ai_checkpoint_number +=1
+
 
 
 
@@ -269,16 +258,14 @@ func _on_eighth_checkpoint_body_entered(body: Node3D) -> void:
 	if body.name == "Muscle Car":
 		intro_checkpoint_number += 1
 		
-	if body.name == "AI_Muscle_Car":
-		intro_ai_checkpoint_number +=1
+
 
 
 func _on_finish_body_entered(body: Node3D) -> void:
 	if body.name == "Muscle Car":
 		intro_checkpoint_number += 1
 		
-	if body.name == "AI_Muscle_Car":
-		intro_ai_checkpoint_number +=1
+
 
 
 func finish_intro_race():
@@ -298,19 +285,9 @@ func finish_intro_race():
 	intro_checkpoint_number = -1000
 	var second_start_area_pos = $Races/SecondRace/SecondStartAreaPosition
 	var second_start_area = $Races/SecondRace/SecondRaceStartArea
-	second_start_area.global_position = second_start_area_pos.global_position
+	#second_start_area.global_position = second_start_area_pos.global_position
 	
 	
-
-func ai_finish_intro_race():
-	intro_checkpoint_number = -1000
-	text.text = "YOU LOST"
-	await get_tree().create_timer(3.0).timeout
-	text.text = ""
-	$Races/IntroRace/Arrows.hide()
-	await get_tree().create_timer(20.0).timeout
-	$Races/IntroRace/start_arrow.show()
-	text.text = "LET'S GO AROUND THE BLOCK AGAIN"
 
 
 func _on_second_race_start_area_body_entered(body: Node3D) -> void:
@@ -490,7 +467,7 @@ func finish_second_race():
 	#third_start_area.global_position = third_start_area_pos.global_position
 	var second_race = $Races/SecondRace
 	second_race.hide()
-	second_race.global_position = delete.global_position
+	#second_race.global_position = delete.global_position
 
 func ai_finish_second_race():
 	second_checkpoint_number = -1000
